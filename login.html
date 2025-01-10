@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HoneyPot Academy - Login</title>
+    <link rel="icon" type="image/png" href="images/ictlab/logo.png">
+
+    <!-- CSS Files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader Section -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/ictlab/logo.png" alt="HoneyPot Academy Logo" style="max-height: 50px; width: auto;">
+                    <strong><span>HoneyPot</span> Academy</strong>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Login Section -->
+        <section class="login-section section-padding d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mx-auto">
+                        <div class="card shadow p-4">
+                            <h2 class="text-center">Login to Your Account</h2>
+                            <form action="login_process.php" method="POST" class="mt-4">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username or email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                                </div>
+                                <button type="submit" class="btn custom-btn btn-block">Login</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Don't have an account? <a href="register.html" class="text-decoration-none">Register</a></p>
+                                <p><a href="forgot-password.html" class="text-decoration-none">Forgot Password?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-10 me-auto mb-4">
+                    <h4 class="text-white mb-3"><a href="index.html">HoneyPot</a> Academy</h4>
+                    <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
+                        Copyright © 2024 <strong>HoneyPot Academy</strong>
+                    </p>
+                    <p class="copyright-text">
+                        Designed by <a href="https://sites.google.com/view/violestudios" target="_blank">violestudios</a>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-8">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="footer-menu d-flex flex-wrap">
+                        <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+                        <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+                        <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+                        <li class="footer-menu-item"><a href="events.html" class="footer-menu-link">Events</a></li>
+                        <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-4">
+                    <h5 class="text-white mb-3">Follow Us</h5>
+                    <ul class="social-icon">
+                        <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                        <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+                        <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
