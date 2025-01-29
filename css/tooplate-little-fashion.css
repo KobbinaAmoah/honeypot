@@ -146,6 +146,51 @@ a:hover {
   text-transform: uppercase;
   position: relative;
 }
+/* Change the dropdown background color to green */
+.navbar .dropdown-menu {
+  background-color: #28a745 !important; /* Green color */
+}
+
+/* Change the hover color of dropdown items */
+.navbar .dropdown-item:hover {
+  background-color: #218838 !important; /* Darker green */
+  color: #fff !important; /* Ensure text is readable */
+}
+
+/* Ensure text color in the dropdown */
+.navbar .dropdown-item {
+  color: #fff !important;
+}
+.navbar-top {
+  background-color: #f8f9fa;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.navbar-top .contact-info span {
+  margin-right: 10px;
+}
+
+.navbar-top .social-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.navbar-top .social-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-main {
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+}
+
+.navbar-main .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .custom-link i {
   position: absolute;
