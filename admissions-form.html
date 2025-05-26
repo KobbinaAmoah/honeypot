@@ -1,256 +1,533 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Admission Form for Honeypot Academy">
-        <meta name="author" content="Honeypot Academy">
-        <title>Honeypot Academy - Admission Form</title>
-        <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Admission Form for Honeypot Academy">
+    <meta name="author" content="Honeypot Academy">
+    <title>Honeypot Academy - Admission Form</title>
+    <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png">
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
-    </head>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+    <style>
+        /* Custom styles for admission form */
+        .admission-form-section {
+            background-color: var(--section-bg-color);
+            padding: 4rem 0;
+        }
+        
+        .form-container {
+            background-color: var(--white-color);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding: 3rem;
+        }
+        
+        .form-section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: var(--font-weight-bold);
+        }
+        
+        .required-field::after {
+            content: " *";
+            color: #dc3545;
+        }
+        
+        .form-note {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+        }
+        
+        .file-upload-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: var(--font-weight-bold);
+        }
+        
+        .file-upload-note {
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-top: 0.25rem;
+        }
+        
+        .form-step {
+            display: flex;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            font-weight: var(--font-weight-bold);
+        }
+        
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 2rem;
+            }
+            
+            .form-section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </section>
+
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <!-- Updated logo section with image -->
             <a class="navbar-brand" href="index.html">
-                <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;">
-                <strong><span>HoneyPot</span> Academy</strong>
+              <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy" width="50" height="50">
+              <strong>Honeypot Academy</strong>
             </a>
-            
             <div class="d-lg-none">
-                <a href="login.html" class="bi-person custom-icon me-3"></a>
-                <a href="facilitator-detail.html" class="bi-pencil-square custom-icon"></a>
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="facilitator-detail.html" class="bi-pencil-square custom-icon" title="Our Team" aria-label="Our Team"></a>
             </div>
-            
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <!-- Home -->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-    
-                    <!-- About -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                            <li><a class="dropdown-item" href="about.html">About HoneyPot</a></li>
-                            <li><a class="dropdown-item" href="about-history.html">History of HoneyPot</a></li>
-                            <li><a class="dropdown-item" href="about-mission.html">Mission of HoneyPot</a></li>
-                            <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
-                        </ul>
-                    </li>
-    
-                    <!-- Admissions -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Admissions
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
-                            <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
-                            <li><a class="dropdown-item" href="admissions-form.html">Admission Form</a></li>
-                            <li><a class="dropdown-item" href="admissions-apply.html">Apply</a></li>
-                            <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
-
-                        </ul>
-                    </li>
-    
-                    <!-- Academics -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Academics
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                            <li><a class="dropdown-item" href="academics.html">Academics</a></li>
-                            <li><a class="dropdown-item" href="academics.html">Programs</a></li>
-                            <li><a class="dropdown-item" href="academics-calendar.html">Academic Calendar</a></li>
-                        </ul>
-                    </li>
-    
-                    <!-- Events -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Events
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvents">
-                            <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
-                            <li><a class="dropdown-item" href="events-past.html">Past Events</a></li>
-                        </ul>
-                    </li>
-    
-                    <!-- Facilitators -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="facilitator-detail.html">Facilitators</a>
-                    </li>
-                </ul>
-            
-                <div class="d-none d-lg-block">
-                    <a href="login.html" class="bi-person custom-icon me-3"></a>
-                    <a href="register.html" class="bi-pencil-square custom-icon"></a> <!-- Updated icon -->
-                  </div>
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                    <li><a class="dropdown-item" href="about.html">About Honeypot Academy</a></li>
+                    <li><a class="dropdown-item" href="about-history.html">History of Honeypot Academy</a></li>
+                    <li><a class="dropdown-item" href="about-mission.html">Mission of Honeypot Academy</a></li>
+                    <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                    <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                    <li><a class="dropdown-item" href="admissions-form.html">Admission Form</a></li>
+                    <li><a class="dropdown-item" href="admissions-apply.html">Apply</a></li>
+                    <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                    <li><a class="dropdown-item" href="academics.html">Academics</a></li>
+                    <li><a class="dropdown-item" href="academics.html">Programs</a></li>
+                    <li><a class="dropdown-item" href="academics-calendar.html">Academic Calendar</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvents">
+                    <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
+                    <li><a class="dropdown-item" href="events-past.html">Past Events</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="facilitator-detail.html">Facilitators</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              </ul>
+              <div class="d-none d-lg-block">
+                <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+                <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
+              </div>
             </div>
-        </div>
+          </div>
     </nav>
-    <body>
-        <header class="site-header section-padding-img site-header-image">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12 header-info">
-                        <h1>
-                            <span class="d-block text-primary">Apply Now</span>
-                            <span class="d-block text-dark">Admission Form</span>
-                        </h1>
-                        <p class="mt-3">We are excited to welcome you to Honeypot Academy. Please fill out the form below to apply for admission.</p>
-                    </div>
-                </div>
-            </div>
-            <img src="images/ictlab/classroom.jpg" class="header-image img-fluid" alt="Students applying for admission to Honeypot Academy">
-        </header>
 
-        <section class="admissions-form section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h4>Admission Form</h4>
-                        <p>Please complete the form below with accurate information to start your application process.</p>
-                        <form action="submit-admission.php" method="POST" id="admission-form" enctype="multipart/form-data">
-                            <!-- Personal Information -->
-                            <h5>Personal Information</h5>
-                            <div class="mb-3">
-                                <label for="full-name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="full-name" name="full_name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="dob" class="form-label">Date of Birth</label>
-                                <input type="date" class="form-control" id="dob" name="dob" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="gender" class="form-label">Gender</label>
-                                <select class="form-select" id="gender" name="gender" required>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Other">Other</option>
-                                </select>
+    <!-- Page Header -->
+    <header class="site-header section-padding d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <h1><span class="text-primary">Admission</span> <span class="text-dark">Form</span></h1>
+            <p class="lead">Begin your journey at Honeypot Academy</p>
+        </div>
+    </header>
+
+    <!-- Admission Form Section -->
+    <section class="admission-form-section section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="form-container">
+                        <h2 class="mb-4">Student Admission Form</h2>
+                        <p class="form-note">Fields marked with <span class="text-danger">*</span> are required. Please complete all sections carefully.</p>
+                        
+                        <form id="admissionForm" method="post" enctype="multipart/form-data">
+                            <!-- Student Information -->
+                            <div class="form-section mb-5">
+                                <h3 class="form-section-title">Student Information</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label required-field">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label required-field">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="dob" class="form-label required-field">Date of Birth</label>
+                                        <input type="date" class="form-control" id="dob" name="dob" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="gender" class="form-label required-field">Gender</label>
+                                        <select class="form-select" id="gender" name="gender" required>
+                                            <option value="" selected disabled>Select gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="nationality" class="form-label required-field">Nationality</label>
+                                    <input type="text" class="form-control" id="nationality" name="nationality" required>
+                                </div>
                             </div>
 
                             <!-- Contact Information -->
-                            <h5>Contact Information</h5>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            <div class="form-section mb-5">
+                                <h3 class="form-section-title">Contact Information</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="parentName" class="form-label required-field">Parent/Guardian Name</label>
+                                        <input type="text" class="form-control" id="parentName" name="parentName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="parentPhone" class="form-label required-field">Parent/Guardian Phone</label>
+                                        <input type="tel" class="form-control" id="parentPhone" name="parentPhone" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="altPhone" class="form-label">Alternative Phone</label>
+                                        <input type="tel" class="form-control" id="altPhone" name="altPhone">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="address" class="form-label required-field">Residential Address</label>
+                                    <textarea class="form-control" id="address" name="address" rows="2" required></textarea>
+                                </div>
                             </div>
 
                             <!-- Academic Information -->
-                            <h5>Academic Information</h5>
-                            <div class="mb-3">
-                                <label for="previous-school" class="form-label">Previous School Name</label>
-                                <input type="text" class="form-control" id="previous-school" name="previous_school" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="grade-level" class="form-label">Grade Level Applying For</label>
-                                <select class="form-select" id="grade-level" name="grade_level" required>
-                                    <option value="Grade 6">Grade 6</option>
-                                    <option value="Grade 7">Grade 7</option>
-                                    <option value="Grade 8">Grade 8</option>
-                                    <option value="Grade 9">Grade 9</option>
-                                    <option value="Grade 10">Grade 10</option>
-                                    <option value="Grade 11">Grade 11</option>
-                                    <option value="Grade 12">Grade 12</option>
-                                </select>
-                            </div>
-
-                            <!-- Supporting Documents -->
-                            <h5>Supporting Documents</h5>
-                            <div class="mb-3">
-                                <label for="academic-records" class="form-label">Upload Academic Records</label>
-                                <input type="file" class="form-control" id="academic-records" name="academic_records" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="health-form" class="form-label">Upload Health Form</label>
-                                <input type="file" class="form-control" id="health-form" name="health_form" required>
-                            </div>
-
-                            <!-- Parental/Guardian Information -->
-                            <h5>Parental/Guardian Information</h5>
-                            <div class="mb-3">
-                                <label for="guardian-name" class="form-label">Guardian's Full Name</label>
-                                <input type="text" class="form-control" id="guardian-name" name="guardian_name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="guardian-phone" class="form-label">Guardian's Phone Number</label>
-                                <input type="tel" class="form-control" id="guardian-phone" name="guardian_phone" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="guardian-email" class="form-label">Guardian's Email Address</label>
-                                <input type="email" class="form-control" id="guardian-email" name="guardian_email" required>
+                            <div class="form-section mb-5">
+                                <h3 class="form-section-title">Academic Information</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="grade" class="form-label required-field">Grade Applying For</label>
+                                        <select class="form-select" id="grade" name="grade" required>
+                                            <option value="" selected disabled>Select grade</option>
+                                            <option value="nursery">Nursery</option>
+                                            <option value="kg1">Kindergarten 1</option>
+                                            <option value="kg2">Kindergarten 2</option>
+                                            <option value="primary1">Primary 1</option>
+                                            <option value="primary2">Primary 2</option>
+                                            <option value="primary3">Primary 3</option>
+                                            <option value="primary4">Primary 4</option>
+                                            <option value="primary5">Primary 5</option>
+                                            <option value="primary6">Primary 6</option>
+                                            <option value="jhs1">JHS 1</option>
+                                            <option value="jhs2">JHS 2</option>
+                                            <option value="jhs3">JHS 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="currentSchool" class="form-label">Current School (if applicable)</label>
+                                        <input type="text" class="form-control" id="currentSchool" name="currentSchool">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="previousGrade" class="form-label">Previous Grade Completed (if applicable)</label>
+                                    <input type="text" class="form-control" id="previousGrade" name="previousGrade">
+                                </div>
                             </div>
 
-                            <!-- Submit Button -->
-                            <div class="mb-3">
-                                <button type="submit" class="btn custom-btn">Submit Application</button>
+                            <!-- Documents Upload -->
+                            <div class="form-section mb-5">
+                                <h3 class="form-section-title">Required Documents</h3>
+                                <p class="form-note">Please upload clear scans or photos of the following documents:</p>
+                                
+                                <div class="mb-3">
+                                    <label for="birthCertificate" class="file-upload-label required-field">Birth Certificate</label>
+                                    <input type="file" class="form-control" id="birthCertificate" name="birthCertificate" accept=".pdf,.jpg,.jpeg,.png" required>
+                                    <p class="file-upload-note">Accepted formats: PDF, JPG, PNG (Max 5MB)</p>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="reportCard" class="file-upload-label">Most Recent Report Card (if applicable)</label>
+                                    <input type="file" class="form-control" id="reportCard" name="reportCard" accept=".pdf,.jpg,.jpeg,.png">
+                                    <p class="file-upload-note">For students transferring from another school</p>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="photo" class="file-upload-label required-field">Passport Photo</label>
+                                    <input type="file" class="form-control" id="photo" name="photo" accept=".jpg,.jpeg,.png" required>
+                                    <p class="file-upload-note">Recent photo with white background (Max 2MB)</p>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="medicalReport" class="file-upload-label">Medical Report (if applicable)</label>
+                                    <input type="file" class="form-control" id="medicalReport" name="medicalReport" accept=".pdf,.jpg,.jpeg,.png">
+                                    <p class="file-upload-note">For students with special medical conditions</p>
+                                </div>
+                            </div>
+
+                            <!-- Additional Information -->
+                            <div class="form-section mb-5">
+                                <h3 class="form-section-title">Additional Information</h3>
+                                <div class="mb-3">
+                                    <label for="specialNeeds" class="form-label">Special Needs or Considerations</label>
+                                    <textarea class="form-control" id="specialNeeds" name="specialNeeds" rows="3"></textarea>
+                                    <p class="form-note">Please describe any special educational needs, allergies, or other considerations we should be aware of.</p>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="howHeard" class="form-label">How did you hear about Honeypot Academy?</label>
+                                    <select class="form-select" id="howHeard" name="howHeard">
+                                        <option value="" selected disabled>Select option</option>
+                                        <option value="friend">Friend/Family</option>
+                                        <option value="social">Social Media</option>
+                                        <option value="event">School Event</option>
+                                        <option value="advertisement">Advertisement</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Terms and Submission -->
+                            <div class="form-section">
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I certify that all information provided is accurate and complete. I understand that providing false information may result in the rejection of this application.
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                    <label class="form-check-label" for="privacy">
+                                        I agree to the processing of my personal data in accordance with Honeypot Academy's Privacy Policy.
+                                    </label>
+                                </div>
+                                
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                    <button type="reset" class="btn btn-outline-secondary me-md-2">Clear Form</button>
+                                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                                </div>
                             </div>
                         </form>
                     </div>
+                    
+                    <div class="process-info mt-5 p-4 bg-light rounded">
+                        <h3 class="form-section-title">Admission Process</h3>
+                        
+                        <div class="form-step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5>Submit Application</h5>
+                                <p>Complete and submit this application form with all required documents.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="form-step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5>Application Review</h5>
+                                <p>Our admissions team will review your application within 3-5 business days.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="form-step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5>Assessment/Interview</h5>
+                                <p>If required, we'll schedule an assessment or interview for your child.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="form-step">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5>Admission Decision</h5>
+                                <p>You'll receive an official admission decision within 2 weeks of completing all steps.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <p>For questions about the admission process, contact our admissions office:</p>
+                            <p>
+                                <strong>Email:</strong> <a href="mailto:admissions@honeypotacademy.edu.gh">admissions@honeypotacademy.edu.gh</a><br>
+                                <strong>Phone:</strong> <a href="tel:+233553058243">+233 55 305 8243</a> / <a href="tel:+233500071744">+233 50 007 1744</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-        
-                    <div class="col-lg-3 col-10 me-auto mb-4">
-                        <h4 class="text-white mb-3"><a href="index.html">HoneyPot</a> Academy</h4>
-                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2025 <strong>Honeypot Academy</strong></p>
-                        <br>
-                        Designed by <a href="https://sites.google.com/view/violestudios" target="_blank">violestudios</a>
-                    </div>
-        
-                    <div class="col-lg-5 col-8">
-                        <h5 class="text-white mb-3">Sitemap</h5>
-        
-                        <ul class="footer-menu d-flex flex-wrap">
-                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
-                            <li class="footer-menu-item"><a href="programs.html" class="footer-menu-link">Programs</a></li>
-                            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
-                            <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
-                            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
-                        </ul>
-                    </div>
-        
-                    <div class="col-lg-3 col-4">
-                        <h5 class="text-white mb-3">Follow Us</h5>
-        
-                        <ul class="social-icon">
-                            <li><a href="https://www.youtube.com" class="social-icon-link bi-youtube" target="_blank"></a></li>
-                            <li><a href="https://www.whatsapp.com" class="social-icon-link bi-whatsapp" target="_blank"></a></li>
-                            <li><a href="https://www.instagram.com" class="social-icon-link bi-instagram" target="_blank"></a></li>
-                            <li><a href="https://www.facebook.com" class="social-icon-link bi-facebook" target="_blank"></a></li>
-                        </ul>
-                    </div>
-        
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-10 me-auto mb-4">
+                    <h4 class="text-white mb-3"><a href="index.html">Honeypot Academy</a></h4>
+                    <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">&copy; 2025 <strong>Honeypot Academy</strong></p>
+                    <p class="text-muted">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener">violestudios</a></p>
+                </div>
+
+                <div class="col-lg-5 col-8">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="footer-menu d-flex flex-wrap">
+                        <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+                        <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+                        <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+                        <li class="footer-menu-item"><a href="events.html" class="footer-menu-link">Events</a></li>
+                        <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <h5 class="text-white mb-3">Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:+233553058243" class="text-muted">+233 55 305 8243</a></li>
+                        <li><a href="tel:+233500071744" class="text-muted">+233 50 007 1744</a></li>
+                        <li><a href="mailto:info@honeypotacademy.edu.gh" class="text-muted">info@honeypotacademy.edu.gh</a></li>
+                        <li class="text-muted">Adenta, Accra, Ghana</li>
+                    </ul>
+                    
+                    <h5 class="text-white mt-4 mb-3">Follow Us</h5>
+                    <ul class="social-icon">
+                        <li><a href="#" class="social-icon-link bi-facebook" target="_blank" aria-label="Facebook"></a></li>
+                        <li><a href="#" class="social-icon-link bi-instagram" target="_blank" aria-label="Instagram"></a></li>
+                        <li><a href="#" class="social-icon-link bi-twitter" target="_blank" aria-label="Twitter"></a></li>
+                        <li><a href="#" class="social-icon-link bi-youtube" target="_blank" aria-label="YouTube"></a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/tooplate-little-fashion.js"></script>
-    </body>
+    <!-- JS Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // Form validation and submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('admissionForm');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic validation
+                let isValid = true;
+                const requiredFields = form.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        field.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        field.classList.remove('is-invalid');
+                    }
+                });
+                
+                // Check if terms are accepted
+                if (!document.getElementById('terms').checked) {
+                    document.getElementById('terms').classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('terms').classList.remove('is-invalid');
+                }
+                
+                if (!document.getElementById('privacy').checked) {
+                    document.getElementById('privacy').classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('privacy').classList.remove('is-invalid');
+                }
+                
+                if (isValid) {
+                    // In a real implementation, you would submit the form here
+                    // For demo purposes, we'll show an alert
+                    alert('Application submitted successfully! We will contact you shortly.');
+                    form.reset();
+                    
+                    // Scroll to top
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // Scroll to first invalid field
+                    const firstInvalid = document.querySelector('.is-invalid');
+                    if (firstInvalid) {
+                        firstInvalid.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                    }
+                }
+            });
+            
+            // Clear validation on input
+            form.querySelectorAll('input, select, textarea').forEach(element => {
+                element.addEventListener('input', function() {
+                    if (this.hasAttribute('required') && this.value.trim()) {
+                        this.classList.remove('is-invalid');
+                    }
+                });
+            });
+            
+            // Clear validation on checkbox change
+            document.getElementById('terms').addEventListener('change', function() {
+                this.classList.remove('is-invalid');
+            });
+            
+            document.getElementById('privacy').addEventListener('change', function() {
+                this.classList.remove('is-invalid');
+            });
+        });
+    </script>
+</body>
 </html>
