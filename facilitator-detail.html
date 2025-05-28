@@ -1,231 +1,237 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- === THIS META DESCRIPTION WILL BE CUSTOMIZED FOR EACH FACILITATOR === -->
+  <meta name="description" content="Learn more about [Facilitator's Name], [Facilitator's Title] at Honeypot Academy. Discover their experience and passion for education.">
+  <meta name="author" content="Honeypot Academy">
+  <!-- === THIS TITLE WILL BE CUSTOMIZED FOR EACH FACILITATOR === -->
+  <title>[Facilitator's Name] - [Facilitator's Title] | Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/slick.css"/> --> <!-- Likely not needed -->
+  <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
+</head>
+<body>
 
-        <title>Honeypot Academy</title>
-        <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png">
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
 
+  <main id="main">
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/slick.css"/>
-
-        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
-
-    </head>
-    
-    <body>
-
-        <section class="preloader">
-            <div class="spinner">
-                <span class="sk-inner-circle"></span>
+    <!-- Header / Navigation (Copied from other pages, ensure "About" or "Team" link is active if applicable) -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+          <div class="d-lg-none">
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="facilitator-detail.html" class="bi-people-fill custom-icon" title="Our Team" aria-label="Our Team"></a>
+            <!-- CONFIRM FILENAME: team.html or facilitators.html -->
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <!-- Add 'active' to About dropdown if this page is considered part of "About" section -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
+                  <!-- CONFIRM FILENAME: team.html or facilitators.html. The active class should be on the team list page link -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                  <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
             </div>
-        </section>
-    
-        <main>
-
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                      <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy" width="50" height="50">
-                      <strong>Honeypot Academy</strong>
-                    </a>
-                    <div class="d-lg-none">
-                      <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-                      <a href="facilitator-detail.html" class="bi-pencil-square custom-icon" title="Our Team" aria-label="Our Team"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                            <li><a class="dropdown-item" href="about.html">About Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="about-history.html">History of Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="about-mission.html">Mission of Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
-                            <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
-                            <li><a class="dropdown-item" href="admissions-apply.html">Apply</a></li>
-                            <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                            <li><a class="dropdown-item" href="academics.html">Academics</a></li>
-                            <li><a class="dropdown-item" href="academics.html">Programs</a></li>
-                            <li><a class="dropdown-item" href="academics-calendar.html">Academic Calendar</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvents">
-                            <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
-                            <li><a class="dropdown-item" href="events-past.html">Past Events</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="facilitator-detail.html">Facilitators</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                      </ul>
-                      <div class="d-none d-lg-block">
-                        <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-                        <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
-                      </div>
-                    </div>
-                  </div>
-            </nav>
-
-            <section class="slick-slideshow">   
-                <div class="slick-custom">
-                    <img src="images/ictlab/teachers1.jpg" class="img-fluid" alt="">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title">Honeypot Academy</h1>
-
-                                    <p class="lead text-white mt-lg-3 mb-lg-5">The Right Start</p>
-
-                                    <a href="about.html" class="btn custom-btn">Learn more about us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>  
-            <!-- Facilitators Header -->
-            <header class="facilitators-header text-center section-padding">
-                <div class="container">
-                    <h1 class="display-4 fw-bold">Meet Our Exceptional Facilitators</h1>
-                    <p class="lead text-muted">
-                        A team of trailblazers dedicated to nurturing minds, inspiring hearts, and shaping tomorrow’s leaders. At Honeypot Academy, education is our passion, and your child’s success is our mission.
-                    </p>
-                </div>
-            </header>
-            
-            <!-- Message from the Facilitators -->
-            <section class="message-from-facilitators section-padding bg-light text-center">
-                <div class="container">
-                    <h2 class="section-title display-6 fw-bold text-primary">A Personal Message from Us</h2>
-                    <p class="lead mt-4 text-secondary">
-                        “Teaching is not just a profession—it’s a calling. At Honeypot Academy, we are privileged to be part of your child’s journey toward greatness. Our classrooms are filled with exploration, creativity, and growth. We see every student as a unique individual with immense potential.”
-                    </p>
-                    <p class="lead text-secondary">
-                        “With unwavering dedication, we strive to create a learning environment where curiosity thrives, confidence blooms, and dreams come alive. It’s an honor to guide your children toward a brighter future, one inspiring lesson at a time.”
-                    </p>
-                    <p class="mt-4">
-                        <strong class="text-primary">— The Facilitators of Honeypot Academy</strong>
-                    </p>
-                </div>
-            </section>
-            
-            <!-- Facilitators Section -->
-            <section class="facilitators section-padding">
-                <div class="container">
-                    <h2 class="text-center mb-5 display-5 fw-bold">Our Star Educators</h2>
-                    <div class="row gy-4">
-                        <!-- Facilitator Card - Kobbina Ewuul Nkechkwu Amoah --> 
-<div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="teacher-card card shadow-sm border-0 text-center">
-        <img src="images/ictlab/Kobbina Ewuul Nkechuku Amoah.jpg" alt="Mr. Amoah" class="card-img-top img-fluid rounded-circle mx-auto mt-3" style="width: 150px;">
-        <div class="card-body">
-            <h5 class="teacher-name fw-bold">Mr. Amoah</h5>
-            <p class="teacher-title text-primary">ICT Teacher</p>
-            <p class="teacher-bio text-muted">
-                A passionate educator with a BSc in Information Technology, skilled in public speaking, web building, and research assistance. He loves teaching and enjoys imparting ICT knowledge to students.
-            </p>
-            <a href="https://drive.google.com/open?id=11tKeWl0GF0iD-lSEO9oh-9VYLYNCbmhe" class="btn btn-outline-primary btn-sm mt-2" target="_blank">View Profile</a>
+          </div>
         </div>
-    </div>
-</div>
+      </nav>
+    </header>
+    <!-- END Header / Navigation -->
 
-<!-- Facilitator Card - Joseph Samuel Kwame Manya -->
-<div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="teacher-card card shadow-sm border-0 text-center">
-        <img src="images/ictlab/manya.jpg" alt="Mr. Manya" class="card-img-top img-fluid rounded-circle mx-auto mt-3" style="width: 150px;">
-        <div class="card-body">
-            <h5 class="teacher-name fw-bold">Mr. Manya</h5>
-            <p class="teacher-title text-primary">English Subject Teacher</p>
-            <p class="teacher-bio text-muted">
-                With a BA in Arts and over 20 years of teaching experience, Mr. Manya is a dedicated educator with expertise in public speaking, mentorship, and music.
-            </p>
-            <a href="#" class="btn btn-outline-primary btn-sm mt-2">Learn More</a>
+    <!-- Simple Page Title Section (Optional - could just go straight into profile) -->
+    <section class="page-hero-section py-5 bg-light"> <!-- Less prominent hero than other pages -->
+        <div class="container text-center">
+            <h1 class="page-title-sub">Meet Our Team</h1> <!-- Generic title -->
         </div>
+    </section>
+    <!-- END Page Title Section -->
+
+
+    <!-- Facilitator Profile Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-5 col-12 mb-4 mb-md-0">
+            <!-- === FACILITATOR IMAGE === -->
+            <img src="images/ictlab/teach2.JPG" class="img-fluid rounded shadow-sm facilitator-profile-image" alt="[Facilitator's Name]">
+            <!-- Example CSS for .facilitator-profile-image (in custom-honeypot.css)
+            .facilitator-profile-image {
+                border: 5px solid #eee;
+            }
+            -->
+          </div>
+          <div class="col-lg-8 col-md-7 col-12">
+            <!-- === FACILITATOR NAME === -->
+            <h2 class="facilitator-name mb-1">[Facilitator's Full Name]</h2>
+            <!-- === FACILITATOR TITLE === -->
+            <h4 class="facilitator-title text-primary mb-3">[Facilitator's Title/Role, e.g., Head Mistress, JHS Science Facilitator]</h4>
+
+            <!-- === ABOUT / BIO === -->
+            <div class="facilitator-bio mb-4">
+              <h5 class="section-sub-title">About Me</h5>
+              <!-- PERSONALIZE: Write 2-3 paragraphs about the facilitator. -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. [Highlight experience, passion, teaching philosophy].</p>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [Mention educational background or specific expertise].</p>
+              <!-- END PERSONALIZE -->
+            </div>
+
+            <!-- === QUALIFICATIONS (Optional Section) === -->
+            <div class="facilitator-qualifications mb-4">
+                <h5 class="section-sub-title">Qualifications</h5>
+                <!-- PERSONALIZE: List key qualifications -->
+                <ul>
+                    <li>[Qualification 1, e.g., M.Ed. in Educational Leadership]</li>
+                    <li>[Qualification 2, e.g., B.Sc. in Mathematics Education]</li>
+                    <li>[Qualification 3, e.g., Professional Teaching Certificate]</li>
+                </ul>
+                <!-- END PERSONALIZE -->
+            </div>
+
+            <!-- === SUBJECTS TAUGHT / RESPONSIBILITIES (Optional Section) === -->
+            <div class="facilitator-responsibilities mb-4">
+                <h5 class="section-sub-title">Subjects Taught / Key Responsibilities</h5>
+                <!-- PERSONALIZE: List subjects or key roles -->
+                <p>[E.g., Junior High School Mathematics, Integrated Science, School Administration, Curriculum Development, etc.]</p>
+                <!-- END PERSONALIZE -->
+            </div>
+
+            <!-- === CONTACT (Optional and use with caution) === -->
+            <div class="facilitator-contact mb-4">
+                <h5 class="section-sub-title">Contact</h5>
+                <!-- PERSONALIZE: Provide school email if appropriate -->
+                <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:facilitator.name@honeypotacademy.edu.gh">facilitator.name@honeypotacademy.edu.gh</a></p>
+                <!-- END PERSONALIZE -->
+            </div>
+
+            <!-- === QUOTE (Optional) === -->
+            <!--
+            <div class="facilitator-quote blockquote mt-4">
+                <p class="mb-0 fst-italic">"A quote that inspires me or my teaching philosophy..."</p>
+                <footer class="blockquote-footer mt-1">[Facilitator's Name]</footer>
+            </div>
+            -->
+
+            <hr class="my-4">
+            <a href="facilitator-detail.html" class="btn btn-outline-secondary">
+              <i class="bi-arrow-left me-2"></i>Back to Our Team
+            </a>
+            <!-- CONFIRM FILENAME: team.html or facilitators.html -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Facilitator Profile Section -->
+
+  </main>
+
+  <!-- Footer (Copy from other pages) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
+            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
+            <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
+            <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
+          <ul class="footer-contact list-unstyled">
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
+  </footer>
+  <!-- END Footer -->
 
-                    </div>
-                </div>
-            </section>
-            
-            
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/Headroom.js"></script> -->
+  <!-- <script src="js/jQuery.headroom.js"></script> -->
+  <!-- <script src="js/slick.min.js"></script> -->
+  <script src="js/custom.js"></script>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
 
-            <!-- Footer Section -->
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-            
-                        <div class="col-lg-3 col-10 me-auto mb-4">
-                            <h4 class="text-white mb-3"><a href="index.html">HoneyPot</a> Academy</h4>
-                            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2025 <strong>Honeypot Academy</strong></p>
-                            <br>
-                            Designed by <a href="https://sites.google.com/view/violestudios" target="_blank">violestudios</a>
-                        </div>
-            
-                        <div class="col-lg-5 col-8">
-                            <h5 class="text-white mb-3">Sitemap</h5>
-            
-                            <ul class="footer-menu d-flex flex-wrap">
-                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
-                                <li class="footer-menu-item"><a href="programs.html" class="footer-menu-link">Programs</a></li>
-                                <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
-                                <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
-                                <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
-                            </ul>
-                        </div>
-            
-                        <div class="col-lg-3 col-4">
-                            <h5 class="text-white mb-3">Follow Us</h5>
-            
-                            <ul class="social-icon">
-                                <li><a href="https://www.youtube.com" class="social-icon-link bi-youtube" target="_blank"></a></li>
-                                <li><a href="https://www.whatsapp.com" class="social-icon-link bi-whatsapp" target="_blank"></a></li>
-                                <li><a href="https://www.instagram.com" class="social-icon-link bi-instagram" target="_blank"></a></li>
-                                <li><a href="https://www.facebook.com" class="social-icon-link bi-facebook" target="_blank"></a></li>
-                            </ul>
-                        </div>
-            
-                    </div>
-                </div>
-            </footer>
-
-        <!-- JS FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
+</body>
 </html>

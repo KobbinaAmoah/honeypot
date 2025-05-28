@@ -3,28 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="About Honeypot Academy – Learn about our history, mission, and vision in Adenta, Accra.">
+  <meta name="description" content="Discover Honeypot Academy: Our story, mission, vision, and commitment to providing an exceptional educational experience in Adenta, Accra.">
   <meta name="author" content="Honeypot Academy">
-  <title>About Honeypot Academy | Our Story & Mission</title>
-  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png">
-  <!-- CSS FILES -->
+  <title>About Us - Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/slick.css"/>
+  <!-- <link rel="stylesheet" href="css/slick.css"/> --> <!-- Commented out as likely no slider on this page -->
   <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
+
+  <!-- Example CSS for .page-hero-section (Add to custom-honeypot.css)
+  
+  -->
 </head>
 <body>
-  <!-- Preloader -->
+
   <section class="preloader">
     <div class="spinner">
       <span class="sk-inner-circle"></span>
     </div>
   </section>
-  
+
   <main id="main">
+
     <!-- Header / Navigation -->
     <header>
       <nav class="navbar navbar-expand-lg">
@@ -33,50 +39,47 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy" width="50" height="50">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
             <strong>Honeypot Academy</strong>
           </a>
           <div class="d-lg-none">
             <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-            <a href="facilitator-detail.html" class="bi-pencil-square custom-icon" title="Our Team" aria-label="Our Team"></a>
+            <a href="team.html" class="bi-people-fill custom-icon" title="Our Team" aria-label="Our Team"></a>
+            <!-- DESTINATION FILE TO CREATE/CONFIRM: team.html (or facilitators.html) -->
           </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                  <li><a class="dropdown-item" href="about.html">About Honeypot Academy</a></li>
-                  <li><a class="dropdown-item" href="about-history.html">History of Honeypot Academy</a></li>
-                  <li><a class="dropdown-item" href="about-mission.html">Mission of Honeypot Academy</a></li>
-                  <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                  <!-- DESTINATION FILE TO CREATE/CONFIRM: team.html (or facilitators.html) -->
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
-                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
-                  <li><a class="dropdown-item" href="admissions-apply.html">Apply</a></li>
                   <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                  <li><a class="dropdown-item" href="academics.html">Academics</a></li>
-                  <li><a class="dropdown-item" href="academics.html">Programs</a></li>
-                  <li><a class="dropdown-item" href="academics-calendar.html">Academic Calendar</a></li>
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvents">
-                  <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
-                  <li><a class="dropdown-item" href="events-past.html">Past Events</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="facilitator-detail.html">Facilitators</a></li>
               <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             <div class="d-none d-lg-block">
               <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
@@ -86,136 +89,220 @@
         </div>
       </nav>
     </header>
+    <!-- END Header / Navigation -->
 
-    <!-- About Page Content -->
+    <!-- Page Title / Simple Hero Section 
+    <div class="slick-custom">
+        <!-- IMAGE: A vibrant, welcoming photo of the school exterior, happy students, or a diverse group learning. 
+        <img src="images/ictlab/learner3.JPG" class="img-fluid" alt="Welcome to Honeypot Academy" loading="lazy">
+        <div class="slick-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-10">
+                <h1 class="slick-title">Honeypot Academy</h1>
+                <p class="lead text-white mt-lg-3 mb-lg-5">The Right Start for a Bright Future.</p>
+                <a href="about.html" class="btn custom-btn">Learn More About Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END Page Title Section -->
+
+    <!-- Our Story / Welcome Section -->
     <section class="section-padding">
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="mb-5">About <span>Honeypot</span> Academy</h2>
-          </div>
-        </div>
-        <!-- History Section -->
-        <div class="row mb-5">
-          <div class="col-lg-6 col-12">
-            <img src="images/ictlab/graduation.jpg" class="img-fluid" alt="School interior" loading="lazy">
-          </div>
-          <div class="col-lg-6 col-12 d-flex flex-column justify-content-center">
-            <h3>Our <span>History</span></h3>
-            <p>Honeypot Academy began its journey in 2009 as a small nursery school, founded with the vision of providing quality early childhood education in the heart of Adenta, Accra. Starting with a handful of students and a passionate team of educators, we quickly gained recognition for our nurturing environment and commitment to excellence.</p>
-            <p>Over the years, we expanded our programs to include Lower Primary and Upper Primary levels. In 2015, we opened our first modern computer lab and library – a milestone that transitioned us into a full-fledged educational institution. Today, we continue to blend traditional values with innovative teaching methods to shape confident, well-rounded individuals.</p>
-            <a href="about-history.html" class="custom-link mt-3">
-              Learn more about our history <i class="bi-arrow-right ms-2"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Mission & Vision Section -->
-        <div class="row mb-5">
-          <div class="col-lg-6 col-12 order-lg-2">
-            <img src="images/ictlab/learner1.JPG" class="img-fluid" alt="Our Mission" loading="lazy">
-          </div>
-          <div class="col-lg-6 col-12 d-flex flex-column justify-content-center order-lg-1">
-            <h3>Our <span>Mission</span> & <span>Vision</span></h3>
-            <p><strong>Mission:</strong> To nurture a generation of critical thinkers, innovative problem solvers, and responsible leaders through a transformative learning environment.</p>
-            <p><strong>Vision:</strong> To be a beacon of educational excellence, inspiring lifelong learning and personal growth while upholding core values of integrity, creativity, and social responsibility.</p>
-            <a href="about-mission.html" class="custom-link mt-3">
-              Read our full mission statement <i class="bi-arrow-right ms-2"></i>
-            </a>
-          </div>
-        </div>
-        <!-- The Team Section -->
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3>Meet <span>Our</span> Team</h3>
-          </div>
-          <div class="col-lg-4 col-12 mb-4 d-flex justify-content-center">
-            <div class="facilitator-thumb text-center">
-              <a href="facilitator-detail.html">
-                <img src="images/facilitators/facilitator1.jpg" class="img-fluid facilitator-image" alt="Mrs. Belinda" loading="lazy">
-              </a>
-              <div class="facilitator-info mt-3">
-                <h5 class="facilitator-name"><a href="facilitator-detail.html" class="facilitator-name-link">Mrs. Belinda</a></h5>
-                <p class="facilitator-role">Head Mistress</p>
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-12">
+            <h2 class="mb-3">Our Journey, <span>Your Child's Future</span></h2>
+            <!-- PERSONALIZE THIS WELCOME NARRATIVE -->
+            <p class="lead">Welcome to Honeypot Academy, a vibrant learning community where every child is inspired to explore, discover, and achieve their full potential. Since our inception, we have been passionately committed to providing a nurturing and stimulating environment that fosters academic excellence, strong moral values, and a lifelong love for learning.</p>
+            <p>We believe in a holistic approach to education, focusing on the intellectual, social, emotional, and physical development of each student. Our dedicated facilitators, comprehensive curriculum, and engaging programs are all designed to equip your child with the skills and confidence needed to thrive in an ever-changing world. At Honeypot Academy, we are more than just a school; we are a family dedicated to shaping the leaders of tomorrow.</p>
+            <!-- END PERSONALIZE -->
+
+            <!-- Optional Principal's Message (Uncomment and populate if desired) -->
+            
+            <div class="mt-4 p-3 bg-light rounded shadow-sm">
+              <h4 class="mb-3">A Message from Our Head Mistress</h4>
+              <div class="d-flex align-items-center">
+                <img src="images/ictlab/akosuahoneypot.jpg" alt="Mrs. Belinda, Head Mistress" class="img-fluid rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="mb-1 fst-italic">"It is my honor to welcome you to Honeypot Academy, where we nurture young minds and build bright futures together."</p>
+                  <p class="mb-0"><strong>Mrs. Akosua</strong><br><small>Head Mistress, Honeypot Academy</small></p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-12 mb-4 d-flex justify-content-center">
-            <div class="facilitator-thumb text-center">
-              <a href="facilitator-detail.html">
-                <img src="images/facilitators/facilitator2.jpg" class="img-fluid facilitator-image" alt="Mr. Afriyie" loading="lazy">
-              </a>
-              <div class="facilitator-info mt-3">
-                <h5 class="facilitator-name"><a href="facilitator-detail.html" class="facilitator-name-link">Mr. Afriyie</a></h5>
-                <p class="facilitator-role">Head Teacher JHS</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12 mb-4 d-flex justify-content-center">
-            <div class="facilitator-thumb text-center">
-              <a href="facilitator-detail.html">
-                <img src="images/facilitators/facilitator3.jpg" class="img-fluid facilitator-image" alt="Mrs. Akosua" loading="lazy">
-              </a>
-              <div class="facilitator-info mt-3">
-                <h5 class="facilitator-name"><a href="facilitator-detail.html" class="facilitator-name-link">Mrs. Akosua</a></h5>
-                <p class="facilitator-role">Pre-School Head Teacher</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 text-center">
-            <a href="facilitator-detail.html" class="btn custom-btn mt-4">View All Facilitators</a>
+          <div class="col-lg-5 col-12 mt-4 mt-lg-0">
+            <!-- IMAGE: A warm, inviting image of the school environment or students. e.g., images/ictlab/learner1.JPG -->
+            <img src="images/ictlab/morningasemble.jpg" class="img-fluid rounded shadow-sm" alt="Students engaged in learning at Honeypot Academy">
           </div>
         </div>
       </div>
     </section>
+    <!-- END Our Story Section -->
+
+    <!-- Our History Summary Section -->
+    <section class="section-padding bg-light"> <!-- Use bg-light or other contrasting background -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+            <!-- IMAGE: An image representing school history or growth. e.g., images/ictlab/classroom.jpg -->
+            <img src="images/ictlab/comminitywalk4.jpg" class="img-fluid rounded shadow-sm" alt="Honeypot Academy campus">
+          </div>
+          <div class="col-lg-7 col-12">
+            <h2 class="mb-3">Our <span>Rich History</span></h2>
+            <!-- PERSONALIZE: This is a summary. Use content from your about-history.html if desired. -->
+            <p>Founded in 2009, Honeypot Academy began as a small nursery school with a profound vision: to provide exceptional early childhood education in Adenta, Accra. From humble beginnings with a handful of students, we have grown steadily, driven by our commitment to excellence and a nurturing learning environment.</p>
+            <p>Key milestones, such as the expansion to Primary levels and the establishment of modern facilities like our computer lab and library, mark our journey of continuous improvement. Today, Honeypot Academy proudly blends cherished traditional values with innovative teaching, shaping confident and well-rounded individuals.</p>
+            <!-- END PERSONALIZE -->
+            <a href="about-history.html" class="btn custom-btn mt-3">
+              Discover Our Full History <i class="bi-arrow-right ms-2"></i>
+            </a>
+            <!-- DESTINATION FILE EXISTS: about-history.html -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Our History Summary Section -->
+
+    <!-- Our Mission & Vision Summary Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-12 order-lg-1">
+            <h2 class="mb-3">Our Guiding <span>Principles</span></h2>
+            <!-- PERSONALIZE: Use the concise Mission & Vision from your old about.html or about-mission.html -->
+            <div class="mb-4">
+              <h4>Our Mission</h4>
+              <p>To nurture a generation of critical thinkers, innovative problem solvers, and responsible leaders through a transformative learning environment.</p>
+            </div>
+            <div class="mb-4">
+              <h4>Our Vision</h4>
+              <p>To be a beacon of educational excellence, inspiring lifelong learning and personal growth while upholding core values of integrity, creativity, and social responsibility.</p>
+            </div>
+            <!-- END PERSONALIZE -->
+            <a href="about-mission.html" class="btn custom-btn mt-3">
+              Explore Our Mission, Vision & Values <i class="bi-arrow-right ms-2"></i>
+            </a>
+            <!-- DESTINATION FILE EXISTS: about-mission.html -->
+          </div>
+          <div class="col-lg-5 col-12 order-lg-2 mt-4 mt-lg-0">
+            <!-- IMAGE: An inspiring image related to mission/vision, e.g., students succeeding, looking towards future. e.g., images/ictlab/learner3.JPG -->
+            <img src="images/ictlab/teach5.JPG" class="img-fluid rounded shadow-sm" alt="Students at Honeypot Academy looking towards the future">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Our Mission & Vision Summary Section -->
+
+    <!-- Meet Our Team Teaser Section -->
+    <section class="section-padding bg-light">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="mb-4">Meet Our <span>Dedicated Team</span></h2>
+            <!-- PERSONALIZE -->
+            <p class="lead mb-4">The heart of Honeypot Academy lies in our passionate and experienced facilitators. They are dedicated to inspiring students and creating a supportive environment where every child can flourish. Get to know the educators who make Honeypot Academy a special place to learn and grow.</p>
+            <!-- END PERSONALIZE -->
+
+            <!-- Example Teaser of Head Mistress -->
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="facilitator-thumb text-center">
+                      <img src="images/ictlab/belindahoneypot.jpg" class="img-fluid rounded-circle facilitator-image mb-2" alt="Mrs. Belinda, Head Mistress" style="width: 150px; height: 150px; object-fit: cover;">
+                      <h5 class="facilitator-name mb-1">Mrs. Belinda</h5>
+                      <p class="facilitator-role text-muted">Head Mistress</p>
+                  </div>
+              </div>
+              <!-- You could add one more key leader here if you wish -->
+            </div>
+
+            <a href="team.html" class="btn custom-btn btn-lg mt-3">
+              View All Facilitators <i class="bi-arrow-right ms-2"></i>
+            </a>
+            <!-- DESTINATION FILE TO CREATE/CONFIRM: team.html (or facilitators.html) -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Meet Our Team Teaser Section -->
+
+    <!-- Call to Action (Optional on About page, but can be good) -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">Interested in <span>Joining Us?</span></h2>
+                    <!-- PERSONALIZE -->
+                    <p class="lead mb-4">We welcome prospective parents and students to learn more about what makes Honeypot Academy unique. Explore our admissions process or get in touch with our team.</p>
+                    <!-- END PERSONALIZE -->
+                    <a href="admissions.html" class="btn custom-btn me-sm-2 mb-2 mb-sm-0">View Admissions Info</a>
+                    <a href="contact.html" class="btn btn-outline-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Call to Action -->
+
   </main>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-10 me-auto mb-4">
-          <h4 class="text-white mb-3"><a href="index.html">Honeypot Academy</a></h4>
-          <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">&copy; 2025 <strong>Honeypot Academy</strong></p>
-          <br>
-          Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener">violestudios</a>
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
         </div>
-        <div class="col-lg-5 col-8">
-          <h5 class="text-white mb-3">Sitemap</h5>
-          <ul class="footer-menu d-flex flex-wrap">
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
             <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
-            <li class="footer-menu-item"><a href="programs.html" class="footer-menu-link">Programs</a></li>
             <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
             <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
-            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
+            <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-12 mt-4">
-          <h5 class="text-white mb-3">Contact Us</h5>
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
           <ul class="footer-contact list-unstyled">
-            <li><a href="tel:+233553058243" class="text-muted">+233 55 305 8243</a></li>
-            <li><a href="tel:+233500071744" class="text-muted">+233 50 007 1744</a></li>
-            <li class="text-muted">Adenta, Accra, Ghana</li>
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
           </ul>
         </div>
-        <div class="col-lg-3 col-4">
-          <h5 class="text-white mb-3">Follow Us</h5>
-          <ul class="social-icon">
-            <li><a href="https://www.youtube.com" class="social-icon-link bi-youtube" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://www.whatsapp.com" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://www.instagram.com" class="social-icon-link bi-instagram" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://www.facebook.com" class="social-icon-link bi-facebook" target="_blank" rel="noopener"></a></li>
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
-  
+  <!-- END Footer -->
+
   <!-- JAVASCRIPT FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/Headroom.js"></script>
-  <script src="js/jQuery.headroom.js"></script>
+  <script src="js/Headroom.js"></script> 
+  <script src="js/jQuery.headroom.js"></script> 
   <script src="js/slick.min.js"></script>
   <script src="js/custom.js"></script>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>

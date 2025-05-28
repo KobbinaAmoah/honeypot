@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the academic programs at Honeypot Academy, from Pre-School to Junior High School. Learn about our curriculum and educational philosophy in Adenta, Accra.">
+  <meta name="description" content="Stay updated with the latest news, announcements, and achievements from Honeypot Academy in Adenta, Accra.">
   <meta name="author" content="Honeypot Academy">
-  <title>Academics - Honeypot Academy</title>
+  <title>Latest News - Honeypot Academy</title>
   <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,22 +18,30 @@
 
   <!-- Remember to add .page-hero-section CSS from about.html to custom-honeypot.css if not already there -->
   <style>
-    .academic-level-section {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      /* border-bottom: 1px solid #eee; */ /* Optional separator */
+    .news-card {
+      margin-bottom: 2rem;
+      box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); /* Bootstrap's shadow-sm */
+      border-radius: 0.25rem;
+      overflow: hidden; /* For image fitting */
     }
-    .academic-level-section:last-of-type {
-        border-bottom: none;
+    .news-card .news-card-img-top {
+      width: 100%;
+      height: 200px; /* Or your preferred height */
+      object-fit: cover;
     }
-    .academic-level-section h3 {
-        color: var(--primary-color, #007bff); /* Or your theme's heading color */
-        margin-bottom: 1rem;
+    .news-card .card-body {
+      display: flex;
+      flex-direction: column;
     }
-    .academic-level-section .level-image {
-        max-height: 300px;
-        object-fit: cover;
-        border-radius: 0.25rem;
+    .news-card .card-title a {
+      color: var(--dark-color, #343a40);
+      text-decoration: none;
+    }
+    .news-card .card-title a:hover {
+      color: var(--primary-color, #007bff);
+    }
+    .news-card .card-text.excerpt {
+        flex-grow: 1; /* Pushes button to bottom */
     }
   </style>
 </head>
@@ -60,7 +68,7 @@
           </a>
           <div class="d-lg-none">
             <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-            <a href="academics.html" class="bi-book custom-icon active" title="Academics" aria-label="Academics"></a> <!-- Active Academics Icon -->
+            <a href="news.html" class="bi-newspaper custom-icon active" title="News" aria-label="News"></a> <!-- Active News Icon -->
           </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
@@ -83,14 +91,14 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a> <!-- Academics Dropdown Active -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li> <!-- This page active -->
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
                   <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
                   <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li> <!-- News Link Active -->
               <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
               <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -105,30 +113,30 @@
     </header>
     <!-- END Header / Navigation -->
 
-    <!-- Page Title / Simple Hero Section 
-    <section class="page-hero-section" style="background-image: url('YOUR_ACADEMICS_PAGE_BANNER_IMAGE.jpg');">
-      <!-- IMAGE: A wide banner image, students learning, classroom, library, or diverse educational materials. 
+    <!-- Page Title / Simple Hero Section -->
+    <section class="page-hero-section" style="background-image: url('YOUR_NEWS_PAGE_BANNER_IMAGE.jpg');">
+      <!-- IMAGE: A wide banner image, dynamic, perhaps students reading, or a collage of activities. -->
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="page-title">Academics at Honeypot Academy</h1>
-            <!-- PERSONALIZE THIS LEAD TEXT 
-            <p class="lead">Nurturing Minds, Building Futures: Our Approach to Education.</p>
-            <!-- END PERSONALIZE 
+            <h1 class="page-title">Latest News & Announcements</h1>
+            <!-- PERSONALIZE THIS LEAD TEXT -->
+            <p class="lead">Stay informed with all the happenings at Honeypot Academy.</p>
+            <!-- END PERSONALIZE -->
           </div>
         </div>
       </div>
     </section>
     <!-- END Page Title Section -->
 
-    <!-- Introduction to Academics Section -->
-    <section class="section-padding">
+    <!-- Introduction Section (Optional) -->
+    <section class="section-padding pb-0"> <!-- pb-0 to reduce space before news items -->
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <!-- PERSONALIZE THIS INTRODUCTION -->
-            <h2 class="mb-3">Our Commitment to Educational Excellence</h2>
-            <p class="lead">At Honeypot Academy, we are dedicated to providing a comprehensive and stimulating academic experience that caters to the diverse needs of our learners from Pre-School through to Junior High School. Our curriculum is designed to foster critical thinking, creativity, and a lifelong passion for learning, ensuring our students are well-prepared for future academic pursuits and life beyond the classroom. We blend rigorous academic standards with a supportive and engaging environment, empowering every child to achieve their full potential.</p>
+            <h2 class="mb-3">Honeypot News Hub</h2>
+            <p class="lead mb-5">Browse through our latest articles and updates to see what we've been up to. From academic achievements to community events, find it all here.</p>
             <!-- END PERSONALIZE -->
           </div>
         </div>
@@ -137,94 +145,102 @@
     <!-- END Introduction Section -->
 
 
-    <!-- Pre-School Program Section -->
-    <section class="academic-level-section bg-light"> <!-- Alternating backgrounds can be nice -->
+    <!-- News Listing Section -->
+    <section class="section-padding pt-0">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-            <!-- IMAGE: Happy pre-schoolers engaged in play-based learning. -->
-            <img src="YOUR_PRESCHOOL_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Pre-School Program at Honeypot Academy">
+        <div class="row">
+
+          <!-- News Item 1: Science Fair -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card news-card h-100">
+              <!-- IMAGE: Thumbnail for Science Fair news -->
+              <a href="news-science-fair.html">
+                  <img src="YOUR_SCIENCE_FAIR_THUMBNAIL.jpg" class="card-img-top news-card-img-top" alt="Science Fair at Honeypot Academy">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title"><a href="news-science-fair.html">Robotics & STEM Shine at Honeypot's Science Fair</a></h5>
+                <p class="card-text text-muted small">Published: [Date of Science Fair News]</p>
+                <p class="card-text excerpt">Our students showcased incredible innovation and learning at the recent Science Fair, with a special focus on robotics and STEM projects...</p>
+                <a href="news-science-fair.html" class="btn btn-outline-primary mt-auto align-self-start">Read More <i class="bi-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-7 col-12">
-            <h3>Our Pre-School / Early Years Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>Our Early Years program provides a warm, nurturing, and stimulating environment for our youngest learners (ages [X] to [Y]). We focus on play-based learning, fostering social skills, language development, creativity, and foundational numeracy and literacy. Our experienced facilitators guide children through exploration and discovery, building a strong foundation for future learning.</p>
-            <ul>
-              <li>Key Focus: Social-emotional development, early literacy & numeracy, motor skills.</li>
-              <li>Approach: Play-based, interactive activities, storytelling, arts & crafts.</li>
-              <li>Environment: Safe, colorful, and engaging classrooms and play areas.</li>
+          <!-- DESTINATION FILE TO CREATE: news-science-fair.html -->
+
+          <!-- News Item 2: New Science Lab -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card news-card h-100">
+              <!-- IMAGE: Thumbnail for New Science Lab news -->
+              <a href="news-science-lab.html">
+                <img src="YOUR_NEW_LAB_THUMBNAIL.jpg" class="card-img-top news-card-img-top" alt="New Science Lab Opening">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title"><a href="news-science-lab.html">New Science Lab Opens Doors to Discovery</a></h5>
+                <p class="card-text text-muted small">Published: [Date of Lab News]</p>
+                <p class="card-text excerpt">We are thrilled to announce our newly equipped Science Lab is now operational, offering students a modern space for hands-on experiments...</p>
+                <a href="news-science-lab.html" class="btn btn-outline-primary mt-auto align-self-start">Read More <i class="bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- DESTINATION FILE TO CREATE: news-science-lab.html -->
+
+          <!-- News Item 3: African Union Day -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card news-card h-100">
+              <!-- IMAGE: Thumbnail for AU Day news -->
+              <a href="news-au-day.html">
+                <img src="YOUR_AU_DAY_THUMBNAIL.jpg" class="card-img-top news-card-img-top" alt="African Union Day Celebrations">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title"><a href="news-au-day.html">Honeypot Academy Celebrates African Union Day</a></h5>
+                <p class="card-text text-muted small">Published: [Date of AU Day News]</p>
+                <p class="card-text excerpt">We proudly celebrated African Union Day with engaging cultural performances, educational activities, and a vibrant display of African heritage...</p>
+                <a href="news-au-day.html" class="btn btn-outline-primary mt-auto align-self-start">Read More <i class="bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- DESTINATION FILE TO CREATE: news-au-day.html -->
+
+          <!-- === ADD MORE NEWS ITEMS HERE === -->
+          <!-- Example for another news item -->
+          <!--
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card news-card h-100">
+              <a href="FILENAME_FOR_THIS_NEWS_ARTICLE.html">
+                <img src="YOUR_NEWS_ITEM_THUMBNAIL.jpg" class="card-img-top news-card-img-top" alt="[Brief description of image]">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title"><a href="FILENAME_FOR_THIS_NEWS_ARTICLE.html">[News Article Title]</a></h5>
+                <p class="card-text text-muted small">Published: [Date]</p>
+                <p class="card-text excerpt">[Short excerpt of the news article...]</p>
+                <a href="FILENAME_FOR_THIS_NEWS_ARTICLE.html" class="btn btn-outline-primary mt-auto align-self-start">Read More <i class="bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          -->
+
+        </div> <!-- End .row for news items -->
+
+        <!-- (Optional) Pagination Placeholder - for future use if many articles
+        <nav aria-label="News Page Navigation" class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
-            <!-- END PERSONALIZE -->
-          </div>
-        </div>
+        </nav>
+        -->
+
       </div>
     </section>
-    <!-- END Pre-School Section -->
-
-    <!-- Primary School Program Section -->
-    <section class="academic-level-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 col-12 order-lg-1"> <!-- Text first on larger screens -->
-            <h3>Our Primary School Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>The Primary School program at Honeypot Academy (catering to ages [X] to [Y], covering Lower and Upper Primary) builds upon the foundational skills developed in Pre-School. We follow the GES curriculum, enriched with co-curricular activities to provide a holistic education. Students engage in core subjects such as English, Mathematics, Science, and Social Studies (Our World Our People), alongside Creative Arts, Physical Education, and ICT.</p>
-            <ul>
-              <li>Key Focus: Developing strong literacy and numeracy, critical thinking, inquiry skills.</li>
-              <li>Approach: Student-centered learning, project-based activities, collaborative work.</li>
-              <li>Curriculum: Aligned with GES standards, emphasis on Ghanaian culture and values.</li>
-            </ul>
-            <!-- END PERSONALIZE -->
-          </div>
-          <div class="col-lg-5 col-12 order-lg-2 mt-4 mt-lg-0">
-            <!-- IMAGE: Primary school students in a classroom or doing a project. -->
-            <img src="YOUR_PRIMARY_SCHOOL_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Primary School Program at Honeypot Academy">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Primary School Section -->
-
-    <!-- Junior High School (JHS) Program Section -->
-    <section class="academic-level-section bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-            <!-- IMAGE: JHS students in a lab, library, or focused learning environment. -->
-            <img src="YOUR_JHS_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Junior High School Program at Honeypot Academy">
-          </div>
-          <div class="col-lg-7 col-12">
-            <h3>Our Junior High School (JHS) Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>Our Junior High School program (Basic 7 to Basic 9) prepares students for the Basic Education Certificate Examination (BECE) and for success in their future academic endeavors. We offer a rigorous curriculum that deepens subject knowledge, hones analytical skills, and encourages independent learning. Emphasis is placed on core subjects, ICT proficiency, and character development, ensuring our graduates are confident, responsible, and well-prepared young adults.</p>
-            <ul>
-              <li>Key Focus: BECE preparation, advanced subject knowledge, research skills, leadership.</li>
-              <li>Approach: Interactive lessons, practical applications, regular assessments, career guidance.</li>
-              <li>Support: Dedicated subject teachers, remedial support, extracurricular clubs.</li>
-            </ul>
-            <!-- END PERSONALIZE -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END JHS Section -->
-
-    <!-- (Optional) Special Programs / Links Section -->
-    <section class="section-padding text-center">
-        <div class="container">
-            <h2 class="mb-4">Explore Further</h2>
-            <p class="lead mb-4">Discover more about our specialized offerings and important academic dates.</p>
-            <a href="programs.html" class="btn custom-btn me-sm-2 mb-2 mb-sm-0">Our Special Programs</a>
-            <a href="academic-calendar.html" class="btn btn-outline-primary">View Academic Calendar</a>
-        </div>
-    </section>
-    <!-- END Special Programs Section -->
-
+    <!-- END News Listing Section -->
 
   </main>
 
   <!-- Footer (Copy from other pages) -->
-  <footer class="site-footer">
+ <footer class="site-footer">
     <div class="container">
       <div class="row">
 

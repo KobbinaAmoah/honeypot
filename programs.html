@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover the special programs and extracurricular activities offered at Honeypot Academy, designed to enrich student learning and development in Adenta, Accra.">
+  <meta name="author" content="Honeypot Academy">
+  <title>Our Special Programs - Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
+
+  <!-- Remember to add .page-hero-section CSS from about.html to custom-honeypot.css if not already there -->
+  <style>
+    .program-section {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      /* border-bottom: 1px solid #eee; */ /* Optional separator */
+    }
+    .program-section:last-of-type {
+        /* border-bottom: none; */
+    }
+    .program-section h3 {
+        color: var(--primary-color, #007bff); /* Or your theme's heading color */
+        margin-bottom: 1rem;
+    }
+    .program-image {
+        max-height: 250px; /* Adjust as needed */
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.25rem;
+        margin-bottom: 1rem;
+    }
+    .program-icon {
+        font-size: 3rem; /* Adjust size for Bootstrap Icons */
+        color: var(--secondary-color, #6c757d);
+        margin-bottom: 1rem;
+        display: block; /* Or inline-block if preferred */
+    }
+  </style>
+</head>
+<body>
+
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+          <div class="d-lg-none">
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="academics.html" class="bi-book custom-icon active" title="Academics" aria-label="Academics"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                  <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a> <!-- Academics Dropdown Active -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item active" href="programs.html">Special Programs</a></li> <!-- This page active -->
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END Header / Navigation -->
+
+    <!-- Page Title / Simple Hero Section -->
+    <section class="page-hero-section" style="background-image: url('YOUR_PROGRAMS_PAGE_BANNER_IMAGE.jpg');">
+      <!-- IMAGE: A wide banner image, collage of students in various extracurricular activities, or a vibrant, active school scene. -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="page-title">Our Special Programs & Activities</h1>
+            <!-- PERSONALIZE THIS LEAD TEXT -->
+            <p class="lead">Enriching Minds, Inspiring Growth Beyond the Classroom.</p>
+            <!-- END PERSONALIZE -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page Title Section -->
+
+    <!-- Introduction Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <!-- PERSONALIZE THIS INTRODUCTION -->
+            <h2 class="mb-3">Fostering Holistic Development</h2>
+            <p class="lead">At Honeypot Academy, we believe that education extends far beyond traditional academics. Our diverse range of special programs and extracurricular activities are designed to nurture students' talents, spark their interests, and develop essential life skills. These programs provide opportunities for creativity, teamwork, leadership, and personal growth, contributing to a well-rounded educational experience.</p>
+            <!-- END PERSONALIZE -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Introduction Section -->
+
+    <!-- Program Listing -->
+    <section class="section-padding pt-0">
+        <div class="container">
+
+            <!-- Program 1: STEM & Robotics Club -->
+            <div class="program-section row align-items-center py-4 my-3 bg-light rounded"> <!-- Added py-4 my-3 bg-light rounded for styling -->
+                <div class="col-lg-4 col-md-5 text-center mb-3 mb-md-0">
+                    <!-- IMAGE or ICON for STEM -->
+                    <img src="YOUR_STEM_PROGRAM_IMAGE.jpg" class="program-image shadow-sm" alt="STEM and Robotics Program">
+                    <!-- OR <i class="bi bi-robot program-icon"></i> -->
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <h3>STEM & Robotics Club</h3>
+                    <!-- PERSONALIZE THIS DESCRIPTION -->
+                    <p>Our STEM & Robotics Club ignites curiosity in Science, Technology, Engineering, and Mathematics. Students engage in hands-on projects, learn coding basics, build robots, and participate in challenges like our annual Science Fair. This program develops critical thinking, problem-solving skills, and a passion for innovation.</p>
+                    <p><strong>Open to:</strong> JHS Students (Basic 7-9) / Primary Students (Specify if different groups)</p>
+                    <!-- END PERSONALIZE -->
+                </div>
+            </div>
+
+            <!-- Program 2: Creative Arts Program -->
+            <div class="program-section row align-items-center py-4 my-3">
+                <div class="col-lg-8 col-md-7 order-md-1"> <!-- Text first on medium+ screens -->
+                    <h3>Creative Arts Program</h3>
+                    <!-- PERSONALIZE THIS DESCRIPTION -->
+                    <p>Nurturing artistic talents is a key part of our holistic approach. Our Creative Arts Program includes opportunities in visual arts (drawing, painting, crafts), music (choir, instrumental learning - specify), and drama. Students can express themselves, build confidence, and appreciate diverse forms of art.</p>
+                    <p><strong>Activities include:</strong> School plays, art exhibitions, music recitals, cultural dance troupes.</p>
+                    <!-- END PERSONALIZE -->
+                </div>
+                <div class="col-lg-4 col-md-5 order-md-2 text-center mb-3 mb-md-0">
+                    <!-- IMAGE or ICON for Arts -->
+                    <img src="YOUR_ARTS_PROGRAM_IMAGE.jpg" class="program-image shadow-sm" alt="Creative Arts Program">
+                    <!-- OR <i class="bi bi-palette program-icon"></i> -->
+                </div>
+            </div>
+
+            <!-- Program 3: Sports & Athletics -->
+            <div class="program-section row align-items-center py-4 my-3 bg-light rounded">
+                <div class="col-lg-4 col-md-5 text-center mb-3 mb-md-0">
+                    <!-- IMAGE or ICON for Sports -->
+                    <img src="YOUR_SPORTS_PROGRAM_IMAGE.jpg" class="program-image shadow-sm" alt="Sports and Athletics">
+                    <!-- OR <i class="bi bi-trophy program-icon"></i> -->
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <h3>Sports & Athletics</h3>
+                    <!-- PERSONALIZE THIS DESCRIPTION -->
+                    <p>We encourage active lifestyles and sportsmanship through our physical education curriculum and various sports activities. Students can participate in [mention specific sports offered, e.g., football, netball, athletics, table tennis]. Our programs focus on skill development, teamwork, and healthy competition.</p>
+                    <p><strong>Highlights:</strong> Annual Sports Day, inter-class competitions, participation in local events (if applicable).</p>
+                    <!-- END PERSONALIZE -->
+                </div>
+            </div>
+            
+            <!-- Program 4: ICT & Digital Literacy -->
+            <div class="program-section row align-items-center py-4 my-3">
+                <div class="col-lg-8 col-md-7 order-md-1">
+                    <h3>ICT & Digital Literacy</h3>
+                    <!-- PERSONALIZE THIS DESCRIPTION -->
+                    <p>In today's digital world, ICT proficiency is essential. Our dedicated ICT lab and integrated curriculum ensure students develop necessary computer skills, from basic operations to coding fundamentals (if applicable) and responsible internet usage. We aim to equip students to be confident and competent digital citizens.</p>
+                    <p><strong>Focus:</strong> Computer basics, Microsoft Office Suite, educational software, online research skills, coding (if offered).</p>
+                    <!-- END PERSONALIZE -->
+                </div>
+                <div class="col-lg-4 col-md-5 order-md-2 text-center mb-3 mb-md-0">
+                    <!-- IMAGE or ICON for ICT -->
+                    <img src="images/ictlab/ictlab.jpg" class="program-image shadow-sm" alt="ICT and Digital Literacy Program">
+                    <!-- OR <i class="bi bi-laptop program-icon"></i> -->
+                </div>
+            </div>
+
+            <!-- === ADD MORE PROGRAM SECTIONS HERE === -->
+            <!-- Duplicate a program-section block and customize -->
+            <!-- Example:
+            <div class="program-section row align-items-center py-4 my-3 bg-light rounded">
+                <div class="col-lg-4 col-md-5 text-center mb-3 mb-md-0">
+                    <img src="YOUR_NEW_PROGRAM_IMAGE.jpg" class="program-image shadow-sm" alt="[Program Name]">
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <h3>[New Program Name]</h3>
+                    <p>[Description of the new program...]</p>
+                    <p><strong>Open to/Activities:</strong> [Details...]</p>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+    <!-- END Program Listing -->
+
+
+  </main>
+
+  <!-- Footer (Copy from other pages) -->
+  <footer class="site-footer">
+    <!-- ... (Paste the entire footer section from index.html here) ... -->
+  </footer>
+  <!-- END Footer -->
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    if (document.getElementById("currentYear")) {
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    }
+  </script>
+
+</body>
+</html>

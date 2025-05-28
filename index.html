@@ -3,31 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Welcome to Honeypot Academy – The Right Start for Young Minds">
+  <meta name="description" content="Honeypot Academy: Nurturing young minds for a bright future. Quality education in Adenta, Accra.">
   <meta name="author" content="Honeypot Academy">
-  <title>Honeypot Academy</title>
-  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png">
-  <!-- Preconnect to external resources -->
+  <title>Honeypot Academy - The Right Start for Young Minds</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
+
+  <!-- Preconnect to external resources (from your original) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://www.youtube.com">
-  <!-- CSS FILES -->
+
+  <!-- CSS FILES (from your original, ensure paths are correct) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css"/>
   <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <!-- === ADD YOUR CUSTOM CSS FILE HERE (RECOMMENDED) === -->
+  <!-- <link href="css/custom-honeypot.css" rel="stylesheet"> -->
+
 </head>
 <body>
-  <!-- Preloader -->
+
+  <!-- Preloader (from your original) -->
   <section class="preloader">
     <div class="spinner">
       <span class="sk-inner-circle"></span>
     </div>
   </section>
 
-  <!-- Main Content -->
+  <!-- Main Content Wrapper -->
   <main id="main">
+
     <!-- Header / Navigation -->
     <header>
       <nav class="navbar navbar-expand-lg">
@@ -35,53 +42,54 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <a class="navbar-brand" href="index.html">
-            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy" width="50" height="50">
+            <!-- IMAGE: Your school logo. Ideally around 150-200px wide, 40-60px high for a navbar -->
+            <img src="images/ictlab/logo.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
             <strong>Honeypot Academy</strong>
           </a>
-          <div class="d-lg-none">
+
+          <div class="d-lg-none"> <!-- Icons for mobile view -->
             <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-            <a href="facilitator-detail.html" class="bi-pencil-square custom-icon" title="Our Team" aria-label="Our Team"></a>
+            <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
           </div>
+
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                  <li><a class="dropdown-item" href="about.html">About Honeypot Academy</a></li>
-                  <li><a class="dropdown-item" href="about-history.html">History of Honeypot Academy</a></li>
-                  <li><a class="dropdown-item" href="about-mission.html">Mission of Honeypot Academy</a></li>
-                  <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                  <!-- You can add more specific about pages here e.g., Mission/Vision if they are separate pages -->
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
-                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
-                  <li><a class="dropdown-item" href="admissions-apply.html">Apply</a></li>
                   <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                  <li><a class="dropdown-item" href="academics.html">Academics</a></li>
-                  <li><a class="dropdown-item" href="academics.html">Programs</a></li>
-                  <li><a class="dropdown-item" href="academics-calendar.html">Academic Calendar</a></li>
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvents">
-                  <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
-                  <li><a class="dropdown-item" href="events-past.html">Past Events</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="facilitator-detail.html">Facilitators</a></li>
               <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-            <div class="d-none d-lg-block">
+
+            <div class="d-none d-lg-block"> <!-- Icons for desktop view -->
               <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
               <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
             </div>
@@ -89,314 +97,298 @@
         </div>
       </nav>
     </header>
-
-    <!-- Hero Slider -->
+        <!-- Hero Slider -->
     <section class="slick-slideshow">
+      <!-- Slide 1 -->
       <div class="slick-custom">
-        <img src="images/ictlab/teachers1.jpg" class="img-fluid" alt="Teachers guiding students at Honeypot Academy" loading="lazy" width="1920" height="1080">
+        <!-- IMAGE: A vibrant, welcoming photo of the school exterior, happy students, or a diverse group learning. -->
+        <img src="images/ictlab/learner3.JPG" class="img-fluid" alt="Welcome to Honeypot Academy" loading="lazy">
         <div class="slick-bottom">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 col-10">
                 <h1 class="slick-title">Honeypot Academy</h1>
-                <p class="lead text-white mt-lg-3 mb-lg-5">The Right Start</p>
-                <a href="about.html" class="btn custom-btn">Learn more about us</a>
+                <p class="lead text-white mt-lg-3 mb-lg-5">The Right Start for a Bright Future.</p>
+                <a href="about.html" class="btn custom-btn">Learn More About Us</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Slide 2 -->
       <div class="slick-custom">
-        <img src="images/ictlab/learner3.JPG" class="img-fluid" alt="Students engaged in learning at Honeypot Academy" loading="lazy" width="1920" height="1080">
+        <!-- IMAGE: Students engaged in an activity, perhaps in the new science lab, or a collaborative learning environment. -->
+        <img src="images/ictlab/teach2.JPG" class="img-fluid" alt="Empowering Young Minds at Honeypot Academy" loading="lazy">
         <div class="slick-bottom">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 col-10">
-                <h1 class="slick-title">Honeypot Academy</h1>
-                <p class="lead text-white mt-lg-3 mb-lg-5">Empowering Young Minds for a Brighter Future</p>
-                <a href="academics.html" class="btn custom-btn">Explore The School</a>
+                <h1 class="slick-title">Empowering Young Minds</h1>
+                <p class="lead text-white mt-lg-3 mb-lg-5">Fostering Curiosity, Creativity, and Excellence.</p>
+                <a href="academics.html" class="btn custom-btn">Explore Our Academics</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Slide 3 -->
       <div class="slick-custom">
-        <img src="images/ictlab/learner2.JPG" class="img-fluid" alt="Students building a foundation at Honeypot Academy" loading="lazy" width="1920" height="1080">
+        <!-- IMAGE: Focus on community, teachers interacting positively with students, or a school event. -->
+        <img src="images/ictlab/events/student_audience4.jpg" class="img-fluid" alt="Join the Honeypot Academy Community" loading="lazy">
         <div class="slick-bottom">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 col-10">
-                <h1 class="slick-title">Honeypot Academy</h1>
-                <p class="lead text-white mt-lg-3 mb-lg-5">Building Foundations for Lifelong Learning</p>
-                <a href="admissions.html" class="btn custom-btn">Enroll now</a>
+                <h1 class="slick-title">Join Our Community</h1>
+                <p class="lead text-white mt-lg-3 mb-lg-5">Discover a Nurturing Environment for Your Child to Thrive.</p>
+                <a href="admissions.html" class="btn custom-btn">Admissions Information</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- About / Introduction & Why Choose Us Tabbed Section -->
-    <section class="about section-padding">
+        <!-- Brief Welcome / Introduction Section -->
+    <section class="about section-padding"> <!-- Using 'about' class for similar styling if needed from template -->
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="mb-5">Get started with <span>Honeypot Academy</span></h2>
-          </div>
-          <div class="col-lg-2 col-12 mt-auto mb-auto">
-            <ul class="nav nav-pills mb-5 mx-auto justify-content-center align-items-center" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Introduction</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="false">Why Honeypot?</button>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-10 col-12">
-            <div class="tab-content mt-2" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row">
-                  <div class="col-lg-7 col-12">
-                    <img src="images/ictlab/teach2.JPG" class="img-fluid" alt="Students learning in classroom at Honeypot Academy" loading="lazy" width="800" height="600">
-                  </div>
-                  <div class="col-lg-5 col-12">
-                    <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
-                      <h4 class="mb-3">Best <span>School</span><br> for <span>Your</span> Children</h4>
-                      <p>🌟 <strong>Honeypot Academy – Shaping Bright Futures!</strong> 🌟</p>
-                      <p>Are you searching for a school that provides your child with the best foundation for success? Look no further than <strong>Honeypot Academy</strong>, where we combine academic excellence with a nurturing environment to help your child thrive!</p>
-                      <p>Join us today! <a href="login.html">Sign In</a> | <a href="register.html">Register</a></p>
-                      <div class="mt-2 mt-lg-auto">
-                        <a href="about.html" class="custom-link mb-2">
-                          Learn More About Us <i class="bi-arrow-right ms-2"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>                                        
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
-                <div class="row">
-                  <div class="col-lg-7 col-12">
-                    <img src="images/ictlab/teach3.JPG" class="img-fluid" alt="Teacher helping students at Honeypot Academy" loading="lazy" width="800" height="600">
-                  </div>
-                  <div class="col-lg-5 col-12">
-                    <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
-                      <h4 class="mb-3">Why Choose Honeypot Academy?</h4>
-                      <ul>
-                        <li><strong>Quality Education:</strong> Engaging and dynamic teaching methods led by experienced educators!</li>
-                        <li><strong>Creative Programs:</strong> Activities that encourage creativity, innovation, and self-expression.</li>
-                        <li><strong>Sports & Fitness:</strong> Physical education building teamwork and healthy lifestyles.</li>
-                        <li><strong>Character & Values:</strong> Building strong morals, discipline, and leadership skills.</li>
-                      </ul>
-                      <p>Join us today for an exceptional learning experience!</p>
-                      <p>📞 Contact Us: <a href="tel:+233553058243">+233 55 305 8243</a> / <a href="tel:+233500071744">+233 50 007 1744</a></p>
-                      <p>📍 Location: Adenta, Accra, Ghana</p>
-                      <p>Open for Admissions from Kindergarten to Junior High School!</p>
-                      <p><strong>Honeypot Academy – The Right Start!</strong> 🍯</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Join Our PTA Section -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <h2 class="mb-5">Join <span>Our</span> PTA</h2>
-            <div class="d-flex flex-column h-100 mt-3">
-              <h4 class="mb-3">Parent-Teacher Association (PTA) at Honeypot Academy</h4>
-              <p>At Honeypot Academy, our PTA fosters collaboration between parents and teachers to create the best learning environment for our students. Through the PTA, parents have a voice in school activities and decision-making, supporting our children's success.</p>
-              <h4 class="mb-3">What Does the PTA Do?</h4>
-              <ul>
-                <li><strong>Communication:</strong> Keeps parents informed about programs, events, and updates.</li>
-                <li><strong>Event Planning:</strong> Organizes sports days, cultural festivals, and fundraisers.</li>
-                <li><strong>Advocacy:</strong> Provides a platform for parents to suggest ideas and improvements.</li>
-                <li><strong>Support:</strong> Assists the school through volunteering and resources.</li>
-              </ul>
-              <h4 class="mb-3">How to Be Part of the PTA</h4>
-              <ul>
-                <li>Attend PTA meetings to stay informed and contribute.</li>
-                <li>Volunteer at school events.</li>
-                <li>Join our PTA WhatsApp group for updates.</li>
-              </ul>
-              <p>Your participation shapes the future of Honeypot Academy and supports your child's success!</p>
-              <div class="mt-2">
-                <a href="contact.html" class="btn custom-btn">Join Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Facilitators & Latest News Sections -->
-    <section class="front-product">
-      <div class="container-fluid p-0">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-12">
-            <img src="images/ictlab/teachers1.jpg" class="img-fluid" alt="Our facilitators at Honeypot Academy" loading="lazy" width="800" height="600">
+          <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+            <!-- IMAGE: A friendly, welcoming image. Could be the school entrance, a diverse group of smiling students, or teachers interacting warmly with students. -->
+            <img src="images/ictlab/events/ghadays.jpeg" class="img-fluid rounded" alt="Welcoming environment at Honeypot Academy" loading="lazy">
           </div>
           <div class="col-lg-6 col-12">
-            <div class="px-5 py-5 py-lg-0">
-              <h2 class="mb-4"><span>Meet </span>Our Facilitators</h2>
-              <p class="lead mb-4">Our dedicated facilitators inspire and empower your children through engaging learning experiences.</p>
-              <a href="about.html" class="custom-link">Explore the School <i class="bi-arrow-right ms-2"></i></a>
-            </div>
+            <h2 class="mb-3">Welcome to <span>Honeypot Academy</span></h2>
+            <!-- PERSONALIZE THIS CONTENT -->
+            <p class="lead">At Honeypot Academy, we believe every child deserves the best possible start in their educational journey. We are dedicated to providing a nurturing, stimulating, and safe environment where young minds can explore, learn, and grow with confidence.</p>
+            <p>Located in the heart of Adenta, Accra, our school offers a comprehensive curriculum from Kindergarten to Junior High School, designed to foster academic excellence, critical thinking, and a lifelong love for learning. We are more than just a school; we are a community committed to shaping well-rounded individuals prepared for a bright future.</p>
+            <!-- END PERSONALIZE -->
+            <a href="about.html" class="btn custom-btn mt-3">Discover More About Us</a>
+            <!-- DESTINATION FILE TO CREATE: about.html -->
           </div>
         </div>
       </div>
     </section>
-
-    <section class="meet-facilitators section-padding"> 
+        <!-- Why Choose Us Section -->
+    <section class="section-padding bg-light"> <!-- bg-light can be used for visual separation -->
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="mb-5"><span>Meet Our</span> Facilitators</h2>
+            <h2 class="mb-5">Why Choose <span>Honeypot Academy?</span></h2>
           </div>
-          <!-- Facilitator 1 -->
-          <div class="col-lg-4 col-12 mb-4 d-flex justify-content-center">
-            <div class="facilitator-thumb text-center">
-              <a href="facilitator-detail.html">
-                <img src="images/facilitators/mrs-belinda.jpg" class="img-fluid facilitator-image" alt="Mrs Belinda, Head Mistress at Honeypot Academy" loading="lazy" width="300" height="300">
-              </a>
-              <div class="facilitator-info mt-3">
-                <h5 class="facilitator-name mb-1"><a href="facilitator-detail.html" class="facilitator-name-link">Mrs. Belinda</a></h5>
-                <p class="facilitator-role">Head Mistress</p>
-                <p>With a decade of experience, Mrs. Belinda makes mathematics accessible and enjoyable, fostering a love for learning.</p>
+        </div>
+        <div class="row gx-lg-5 gy-4"> <!-- gx-lg-5 for horizontal gap, gy-4 for vertical gap -->
+
+          <!-- Feature 1: New computer Lab -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="featured-item text-center p-4 h-100 shadow-sm rounded">
+              <div class="featured-icon mb-3">
+                <i class="bi bi-shield-check fs-1 text-warning"></i>
               </div>
+              <h4 class="mb-2">Safe & Nurturing Environment</h4>
+              <p>We prioritize a secure and welcoming campus with 24 hour cctv and trained security personel where students feel respected, valued, and encouraged to express themselves freely.</p>
             </div>
           </div>
-          <!-- Facilitator 2 -->
-          <div class="col-lg-4 col-12 mb-4 d-flex justify-content-center">
-            <div class="facilitator-thumb text-center">
-              <a href="facilitator-detail.html">
-                <img src="images/facilitators/mr-afriyie.jpg" class="img-fluid facilitator-image" alt="Mr Afriyie, Head Teacher at Honeypot Academy" loading="lazy" width="300" height="300">
-              </a>
-              <div class="facilitator-info mt-3">
-                <h5 class="facilitator-name mb-1"><a href="facilitator-detail.html" class="facilitator-name-link">Mr. Afriyie</a></h5>
-                <p class="facilitator-role">Head Teacher JHS</p>
-                <p>Mr. Afriyie fosters academic excellence and discipline, guiding students and teachers toward success.</p>
+
+          <!-- Feature 2: Focus on STEM & Holistic Development -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="featured-item text-center p-4 h-100 shadow-sm rounded">
+              <div class="featured-icon mb-3">
+                <i class="bi bi-bounding-box-circles fs-1 text-success"></i> <!-- Example Bootstrap Icon -->
               </div>
+              <h4 class="mb-2">STEM Focus & Holistic Growth</h4>
+              <!-- PERSONALIZE THIS CONTENT -->
+              <p>We emphasize Science, Technology, Engineering, and Mathematics (STEM) alongside creative arts and sports, ensuring a well-rounded education that prepares students for future challenges.</p>
+              <!-- END PERSONALIZE -->
             </div>
           </div>
-          <!-- Facilitator 3 -->
-          <div class="col-lg-4 col-12 mb-4 d-flex justify-content-center">
-            <div class="facilitator-thumb text-center">
-              <a href="facilitator-detail.html">
-                <img src="images/facilitators/mrs-akosua.jpg" class="img-fluid facilitator-image" alt="Mrs Akosua, Pre-School Head Teacher at Honeypot Academy" loading="lazy" width="300" height="300">
-              </a>
-              <div class="facilitator-info mt-3">
-                <h5 class="facilitator-name mb-1"><a href="facilitator-detail.html" class="facilitator-name-link">Mrs. Akosua</a></h5>
-                <p class="facilitator-role">Pre-School Head Teacher</p>
-                <p>Mrs. Akosua promotes holistic development through active learning and engaging social activities.</p>
+
+          <!-- Feature 3: Experienced & Caring Facilitators -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="featured-item text-center p-4 h-100 shadow-sm rounded">
+              <div class="featured-icon mb-3">
+                <i class="bi bi-people-fill fs-1 text-info"></i> <!-- Example Bootstrap Icon -->
               </div>
+              <h4 class="mb-2">Dedicated Facilitators</h4>
+              <!-- PERSONALIZE THIS CONTENT -->
+              <p>Our team of experienced and passionate educators is committed to creating a supportive learning atmosphere, inspiring each child to reach their full potential with personalized attention.</p>
+              <!-- END PERSONALIZE -->
             </div>
           </div>
-          <!-- Section Footer -->
-          <div class="col-12 text-center mt-5">
-            <p class="lead mb-4">Discover our team of passionate educators inspiring every student to reach their full potential.</p>
-            <a href="about.html" class="custom-link">Learn More About Our Programs <i class="bi-arrow-right ms-2"></i></a>
-          </div>
+
+          <!-- OPTIONAL: You can add a fourth feature here if needed, following the same structure -->
         </div>
       </div>
     </section>
-
-    <!-- Latest News Section -->
-    <section class="youtube-video-thumbnail section-padding">
+        <!-- Latest News & Events Highlights Section -->
+    <section class="section-padding">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-title mb-5"><span>Latest</span> News</h2>
+            <h2 class="mb-5">Stay Updated: <span>News & Events</span></h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6 col-12 mb-4">
-            <div class="video-thumbnail-wrapper">
-              <a href="https://youtu.be/D9N7QaIOkG8?si=MIWnrMBG2RkiQR2R" target="_blank" rel="noopener noreferrer">
-                <img src="images/ictlab/teach2.JPG" alt="Honeypot Academy News Video" class="youtube-thumbnail img-fluid" loading="lazy" width="800" height="450">
-                <div class="play-button-overlay">
-                  <i class="bi-play-circle-fill"></i>
-                </div>
-              </a>
+
+        <div class="row g-4"> <!-- g-4 provides gutters (spacing) between columns -->
+
+          <!-- News Item 1: Science Fair -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="news-event-card card h-100 shadow-sm">
+              <!-- IMAGE: A dynamic photo from the Science Fair, showing students and their robotics/STEM projects. -->
+              <img src="images/ictlab/science.jpg" class="card-img-top" alt="Honeypot Academy Science Fair with Robotics and STEM" loading="lazy" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Robotics & STEM Shine at Science Fair</h5>
+                <!-- PERSONALIZE THIS CONTENT -->
+                <p class="card-text small text-muted">Published: [Date of Science Fair or "Recently"]</p>
+                <p class="card-text flex-grow-1">Our students showcased incredible innovation and learning at the recent Science Fair, with a special focus on robotics and STEM projects. It was a fantastic display of curiosity and skill!</p>
+                <!-- END PERSONALIZE -->
+                <a href="news-science-fair.html" class="btn btn-outline-primary mt-auto align-self-start">Read More</a>
+                <!-- DESTINATION FILE TO CREATE: news-science-fair.html -->
+              </div>
             </div>
-            <h3 class="mt-3">Annual Science Fair Highlights</h3>
-            <p>Watch highlights from our recent Science Fair where students showcased innovative projects.</p>
           </div>
-          <div class="col-lg-6 col-12 mb-4">
-            <div class="news-item">
-              <h3><a href="news.html">New Sports Complex Opening</a></h3>
-              <p class="news-date">June 15, 2025</p>
-              <p>Our new sports facility is now open, featuring a football pitch, basketball court, and running track.</p>
+
+          <!-- News Item 2: New Science Lab -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="news-event-card card h-100 shadow-sm">
+              <!-- IMAGE: A clear photo of the new Science Lab, perhaps with students starting to use it (if available and appropriate). -->
+              <img src="images/ictlab/learner1.JPG" class="card-img-top" alt="New Science Lab at Honeypot Academy" loading="lazy" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">New Science Lab Opens Doors to Discovery</h5>
+                <!-- PERSONALIZE THIS CONTENT -->
+                <p class="card-text small text-muted">Opened: [Date of Lab Opening or "Now Open!"]</p>
+                <p class="card-text flex-grow-1">We are thrilled to announce our newly equipped Science Lab is now operational, offering students a modern space for hands-on experiments and fostering a passion for science.</p>
+                <!-- END PERSONALIZE -->
+                <a href="news-science-lab.html" class="btn btn-outline-primary mt-auto align-self-start">Learn More</a>
+                <!-- DESTINATION FILE TO CREATE: news-science-lab.html -->
+              </div>
             </div>
-            <div class="news-item mt-4">
-              <h3><a href="news.html">Academic Excellence Awards</a></h3>
-              <p class="news-date">May 28, 2025</p>
-              <p>Congratulations to our students who received awards for outstanding academic performance.</p>
+          </div>
+
+          <!-- Event Item 1: African Union Day Celebration -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="news-event-card card h-100 shadow-sm">
+              <!-- IMAGE: A vibrant photo from the African Union Day celebration, showing cultural displays or student participation. -->
+              <img src="images/ictlab/au_daypic.jpg" class="card-img-top" alt="African Union Day Celebration at Honeypot Academy" loading="lazy" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Celebrating African Union Day</h5>
+                <!-- PERSONALIZE THIS CONTENT -->
+                <p class="card-text small text-muted">Celebrated: [Date of AU Day Event]</p>
+                <p class="card-text flex-grow-1">Honeypot Academy proudly celebrated African Union Day with engaging cultural performances, educational activities, and a vibrant display of African heritage by our students and staff.</p>
+                <!-- END PERSONALIZE -->
+                <a href="news-au-day.html" class="btn btn-outline-primary mt-auto align-self-start">View Highlights</a>
+                <!-- DESTINATION FILE TO CREATE: news-au-day.html (or could link to gallery.html#au-day if you prefer) -->
+              </div>
             </div>
-            <div class="text-center mt-4">
-              <a href="news.html" class="btn custom-btn">View All News</a>
-            </div>
+          </div>
+
+        </div> <!-- End .row for cards -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <a href="news.html" class="btn custom-btn me-2">View All News</a>
+            <!-- DESTINATION FILE TO CREATE: news.html -->
+            <a href="events.html" class="btn custom-btn-outline">See Upcoming Events</a>
+            <!-- DESTINATION FILE TO CREATE: events.html -->
+            <!-- For custom-btn-outline, you might need to define this style in your custom-honeypot.css -->
+            <!-- Example for custom-btn-outline in custom-honeypot.css:
+            
+            -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+        <!-- Call to Action Section -->
+    <section class="section-padding bg-secondary text-white"> <!-- Using bg-secondary or another distinct background -->
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="mb-3">Ready to Join the Honeypot Academy Family?</h2>
+            <!-- PERSONALIZE THIS CONTENT -->
+            <p class="lead mb-4">We invite you to learn more about our admissions process, visit our campus, or get in touch with any questions. Take the first step towards an exceptional education for your child.</p>
+            <!-- END PERSONALIZE -->
+            <a href="apply.html" class="btn custom-btn btn-lg me-sm-3 mb-3 mb-sm-0">Apply for Admission</a>
+            <!-- DESTINATION FILE TO CREATE: apply.html (or admissions.html) -->
+            <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us Today</a>
+            <!-- DESTINATION FILE TO CREATE: contact.html -->
+            <!-- btn-outline-light is a Bootstrap class for light outlined buttons on dark backgrounds -->
           </div>
         </div>
       </div>
     </section>
-
   </main>
+
+  </main> <!-- This is the closing tag of your <main id="main"> element -->
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-10 me-auto mb-4">
-          <h4 class="text-white mb-3"><a href="index.html">Honeypot Academy</a></h4>
-          <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">&copy; 2025 <strong>Honeypot Academy</strong></p>
-          <br>
-          <p class="text-muted">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer">violestudios</a></p>
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <!-- PERSONALIZE THIS SHORT DESCRIPTION (Optional) -->
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <!-- END PERSONALIZE -->
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
         </div>
-        <div class="col-lg-5 col-8">
-          <h5 class="text-white mb-3">Sitemap</h5>
-          <ul class="footer-menu d-flex flex-wrap">
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
             <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
-            <li class="footer-menu-item"><a href="programs.html" class="footer-menu-link">Programs</a></li>
             <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
             <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
-            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
+            <!-- DESTINATION FILE TO CREATE: faq.html -->
             <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
+            <!-- DESTINATION FILE TO CREATE: sitemap.html -->
           </ul>
         </div>
-        <div class="col-lg-4 col-12 mt-4">
-          <h5 class="text-white mb-3">Contact Us</h5>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
           <ul class="footer-contact list-unstyled">
-            <li><a href="tel:+233553058243" class="text-muted">+233 55 305 8243</a></li>
-            <li><a href="tel:+233500071744" class="text-muted">+233 50 007 1744</a></li>
-            <li class="text-muted">Adenta, Accra, Ghana</li>
-            <li><a href="mailto:info@honeypotacademy.edu.gh" class="text-muted">info@honeypotacademy.edu.gh</a></li>
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
           </ul>
         </div>
-        <div class="col-lg-3 col-4">
-          <h5 class="text-white mb-3">Follow Us</h5>
-          <ul class="social-icon">
-            <li><a href="https://www.youtube.com" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
-            <li><a href="https://www.whatsapp.com" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
-            <li><a href="https://www.instagram.com" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
-            <li><a href="https://www.facebook.com" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <!-- REPLACE # with your actual social media links -->
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
           </ul>
         </div>
+
       </div>
     </div>
   </footer>
 
-  <!-- JAVASCRIPT FILES -->
+  <!-- JAVASCRIPT FILES (These should already be at the bottom of your body) -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/Headroom.js"></script>
   <script src="js/jQuery.headroom.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/custom.js"></script>
+
+  <!-- Script to update current year in footer -->
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>

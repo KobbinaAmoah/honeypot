@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the academic programs at Honeypot Academy, from Pre-School to Junior High School. Learn about our curriculum and educational philosophy in Adenta, Accra.">
+  <meta name="description" content="View the Honeypot Academy academic calendar for the 2024/2025 session, including term dates, holidays, and key school events.">
   <meta name="author" content="Honeypot Academy">
-  <title>Academics - Honeypot Academy</title>
+  <title>Academic Calendar - Honeypot Academy</title>
   <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,22 +18,30 @@
 
   <!-- Remember to add .page-hero-section CSS from about.html to custom-honeypot.css if not already there -->
   <style>
-    .academic-level-section {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      /* border-bottom: 1px solid #eee; */ /* Optional separator */
+    .calendar-section {
+      margin-bottom: 2.5rem;
     }
-    .academic-level-section:last-of-type {
-        border-bottom: none;
+    .calendar-section h3 {
+      color: var(--primary-color, #007bff);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary-color, #007bff);
+      display: inline-block;
     }
-    .academic-level-section h3 {
-        color: var(--primary-color, #007bff); /* Or your theme's heading color */
-        margin-bottom: 1rem;
+    .key-dates-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #eee;
     }
-    .academic-level-section .level-image {
-        max-height: 300px;
-        object-fit: cover;
-        border-radius: 0.25rem;
+    .key-dates-list li:last-child {
+      border-bottom: none;
+    }
+    .key-dates-list .date {
+      font-weight: bold;
+      min-width: 150px; /* Adjust as needed for alignment */
+      display: inline-block;
+    }
+    .holiday-list .date {
+        min-width: 120px;
     }
   </style>
 </head>
@@ -60,7 +68,7 @@
           </a>
           <div class="d-lg-none">
             <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-            <a href="academics.html" class="bi-book custom-icon active" title="Academics" aria-label="Academics"></a> <!-- Active Academics Icon -->
+            <a href="academics.html" class="bi-book custom-icon active" title="Academics" aria-label="Academics"></a>
           </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
@@ -85,9 +93,9 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a> <!-- Academics Dropdown Active -->
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li> <!-- This page active -->
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
                   <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
-                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li> <!-- This page active -->
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
@@ -106,14 +114,14 @@
     <!-- END Header / Navigation -->
 
     <!-- Page Title / Simple Hero Section 
-    <section class="page-hero-section" style="background-image: url('YOUR_ACADEMICS_PAGE_BANNER_IMAGE.jpg');">
-      <!-- IMAGE: A wide banner image, students learning, classroom, library, or diverse educational materials. 
+    <section class="page-hero-section" style="background-image: url('YOUR_ACADEMIC_CALENDAR_BANNER_IMAGE.jpg');">
+      <!-- IMAGE: A wide banner image, perhaps a calendar, planning tools, or an orderly classroom. 
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="page-title">Academics at Honeypot Academy</h1>
+            <h1 class="page-title">Academic Calendar 2024/2025</h1>
             <!-- PERSONALIZE THIS LEAD TEXT 
-            <p class="lead">Nurturing Minds, Building Futures: Our Approach to Education.</p>
+            <p class="lead">Key dates and events for the current academic year at Honeypot Academy.</p>
             <!-- END PERSONALIZE 
           </div>
         </div>
@@ -121,105 +129,143 @@
     </section>
     <!-- END Page Title Section -->
 
-    <!-- Introduction to Academics Section -->
+    <!-- Main Calendar Content Section -->
     <section class="section-padding">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <!-- PERSONALIZE THIS INTRODUCTION -->
-            <h2 class="mb-3">Our Commitment to Educational Excellence</h2>
-            <p class="lead">At Honeypot Academy, we are dedicated to providing a comprehensive and stimulating academic experience that caters to the diverse needs of our learners from Pre-School through to Junior High School. Our curriculum is designed to foster critical thinking, creativity, and a lifelong passion for learning, ensuring our students are well-prepared for future academic pursuits and life beyond the classroom. We blend rigorous academic standards with a supportive and engaging environment, empowering every child to achieve their full potential.</p>
-            <!-- END PERSONALIZE -->
+
+        <!-- Introduction (Optional) -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto text-center">
+                <!-- PERSONALIZE THIS INTRODUCTION -->
+                <p class="lead">Please find below the important dates for the 2024/2025 academic session. For a detailed weekly breakdown of the current term's activities, please see our <a href="events.html">Events Page</a>.</p>
+                <!-- END PERSONALIZE -->
+            </div>
+        </div>
+
+        <!-- Third Term Section (Using provided itinerary) -->
+        <div class="calendar-section">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3>Third Term 2024/2025</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <ul class="list-unstyled key-dates-list">
+                <li><span class="date">May 5, 2025:</span> Term Begins (Clean Up Day)</li>
+                <li><span class="date">May 7, 2025:</span> Re-opening of School</li>
+                <li><span class="date">May 23, 2025:</span> Commemoration of AU Day</li>
+                <li><span class="date">June 9-13, 2025:</span> Mid-term Examinations</li>
+                <li><span class="date">June 13, 2025:</span> Honeypot Colour Day (Pre-School)</li>
+                <li><span class="date">June 20 & 23, 2025:</span> Mid-Term Break</li>
+                <li><span class="date">July 21-25, 2025:</span> End of Term Examinations</li>
+                <li><span class="date">July 26, 2025:</span> Graduation (Kindergarten) & Prefect Handing Over</li>
+                <li><span class="date">July 31, 2025:</span> Vacation Day (End of Term)</li>
+              </ul>
+              <p class="text-center mt-3"><a href="events.html" class="btn btn-sm btn-outline-secondary">View Full 3rd Term Weekly Itinerary</a></p>
+            </div>
           </div>
         </div>
+        <!-- END Third Term Section -->
+
+
+        <!-- Placeholder for First Term Section -->
+        <div class="calendar-section">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3>First Term 2025/2026 (Tentative)</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- PERSONALIZE WITH ACTUAL DATES WHEN AVAILABLE -->
+                <ul class="list-unstyled key-dates-list">
+                    <li><span class="date">September 9, 2025:</span> Reopening for Next Academic Year / Term Begins</li>
+                    <li><span class="date">[Date]:</span> Mid-Term Break (if applicable)</li>
+                    <li><span class="date">[Date Range]:</span> End of Term Examinations</li>
+                    <li><span class="date">[Date]:</span> Vacation Day (End of Term)</li>
+                </ul>
+                <p class="text-muted text-center mt-2"><em>Detailed schedule for the First Term will be updated soon.</em></p>
+                <!-- END PERSONALIZE -->
+            </div>
+          </div>
+        </div>
+        <!-- END First Term Section -->
+
+
+        <!-- Placeholder for Second Term Section -->
+        <div class="calendar-section">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3>Second Term 2025/2026 (Tentative)</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- PERSONALIZE WITH ACTUAL DATES WHEN AVAILABLE -->
+                <ul class="list-unstyled key-dates-list">
+                    <li><span class="date">[Date]:</span> Term Begins</li>
+                    <li><span class="date">[Date]:</span> Mid-Term Break (if applicable)</li>
+                    <li><span class="date">[Date Range]:</span> End of Term Examinations</li>
+                    <li><span class="date">[Date]:</span> Vacation Day (End of Term)</li>
+                </ul>
+                <p class="text-muted text-center mt-2"><em>Detailed schedule for the Second Term will be updated soon.</em></p>
+                <!-- END PERSONALIZE -->
+            </div>
+          </div>
+        </div>
+        <!-- END Second Term Section -->
+
+        <!-- Public Holidays Section (Example) -->
+        <div class="calendar-section">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3>Public Holidays Observed (Example)</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- PERSONALIZE WITH ACTUAL PUBLIC HOLIDAYS OBSERVED BY THE SCHOOL -->
+                <ul class="list-unstyled key-dates-list holiday-list">
+                    <li><span class="date">May 1, 2025:</span> May Day (Workers' Day)</li>
+                    <li><span class="date">May 25, 2025:</span> Africa Union Day (Observed May 23rd in school)</li>
+                    <li><span class="date">[Date]:</span> Founder's Day</li>
+                    <li><span class="date">[Date]:</span> Kwame Nkrumah Memorial Day</li>
+                    <li><span class="date">[Date]:</span> Farmer's Day</li>
+                    <li><span class="date">[Date]:</span> Christmas Day</li>
+                    <li><span class="date">[Date]:</span> Boxing Day</li>
+                    <li><span class="date">[Date]:</span> New Year's Day</li>
+                    <li><span class="date">[Date]:</span> Constitution Day</li>
+                    <li><span class="date">[Date]:</span> Independence Day</li>
+                    <li><span class="date">[Date]:</span> Good Friday</li>
+                    <li><span class="date">[Date]:</span> Easter Monday</li>
+                    <li><span class="date">[Date]:</span> Eid al-Fitr*</li>
+                    <li><span class="date">[Date]:</span> Eid al-Adha*</li>
+                </ul>
+                <p class="text-muted text-center mt-2"><em>*Dates for Eid holidays are subject to sighting of the moon and official announcements.</em></p>
+                <!-- END PERSONALIZE -->
+            </div>
+          </div>
+        </div>
+        <!-- END Public Holidays Section -->
+
+        <!-- (Optional) Download Link -->
+        <!--
+        <div class="text-center mt-5">
+            <a href="path/to/your/full_academic_calendar.pdf" class="btn custom-btn" download>
+                <i class="bi bi-download me-2"></i>Download Full Academic Calendar (PDF)
+            </a>
+        </div>
+        -->
+
+        <!-- (Optional) Important Notes -->
+        <div class="text-center mt-5">
+            <p class="text-muted"><em>Please note: All dates are correct at the time of publishing and may be subject to change. Please refer to school communications for any updates.</em></p>
+        </div>
+
       </div>
     </section>
-    <!-- END Introduction Section -->
-
-
-    <!-- Pre-School Program Section -->
-    <section class="academic-level-section bg-light"> <!-- Alternating backgrounds can be nice -->
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-            <!-- IMAGE: Happy pre-schoolers engaged in play-based learning. -->
-            <img src="YOUR_PRESCHOOL_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Pre-School Program at Honeypot Academy">
-          </div>
-          <div class="col-lg-7 col-12">
-            <h3>Our Pre-School / Early Years Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>Our Early Years program provides a warm, nurturing, and stimulating environment for our youngest learners (ages [X] to [Y]). We focus on play-based learning, fostering social skills, language development, creativity, and foundational numeracy and literacy. Our experienced facilitators guide children through exploration and discovery, building a strong foundation for future learning.</p>
-            <ul>
-              <li>Key Focus: Social-emotional development, early literacy & numeracy, motor skills.</li>
-              <li>Approach: Play-based, interactive activities, storytelling, arts & crafts.</li>
-              <li>Environment: Safe, colorful, and engaging classrooms and play areas.</li>
-            </ul>
-            <!-- END PERSONALIZE -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Pre-School Section -->
-
-    <!-- Primary School Program Section -->
-    <section class="academic-level-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 col-12 order-lg-1"> <!-- Text first on larger screens -->
-            <h3>Our Primary School Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>The Primary School program at Honeypot Academy (catering to ages [X] to [Y], covering Lower and Upper Primary) builds upon the foundational skills developed in Pre-School. We follow the GES curriculum, enriched with co-curricular activities to provide a holistic education. Students engage in core subjects such as English, Mathematics, Science, and Social Studies (Our World Our People), alongside Creative Arts, Physical Education, and ICT.</p>
-            <ul>
-              <li>Key Focus: Developing strong literacy and numeracy, critical thinking, inquiry skills.</li>
-              <li>Approach: Student-centered learning, project-based activities, collaborative work.</li>
-              <li>Curriculum: Aligned with GES standards, emphasis on Ghanaian culture and values.</li>
-            </ul>
-            <!-- END PERSONALIZE -->
-          </div>
-          <div class="col-lg-5 col-12 order-lg-2 mt-4 mt-lg-0">
-            <!-- IMAGE: Primary school students in a classroom or doing a project. -->
-            <img src="YOUR_PRIMARY_SCHOOL_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Primary School Program at Honeypot Academy">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Primary School Section -->
-
-    <!-- Junior High School (JHS) Program Section -->
-    <section class="academic-level-section bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-            <!-- IMAGE: JHS students in a lab, library, or focused learning environment. -->
-            <img src="YOUR_JHS_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Junior High School Program at Honeypot Academy">
-          </div>
-          <div class="col-lg-7 col-12">
-            <h3>Our Junior High School (JHS) Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>Our Junior High School program (Basic 7 to Basic 9) prepares students for the Basic Education Certificate Examination (BECE) and for success in their future academic endeavors. We offer a rigorous curriculum that deepens subject knowledge, hones analytical skills, and encourages independent learning. Emphasis is placed on core subjects, ICT proficiency, and character development, ensuring our graduates are confident, responsible, and well-prepared young adults.</p>
-            <ul>
-              <li>Key Focus: BECE preparation, advanced subject knowledge, research skills, leadership.</li>
-              <li>Approach: Interactive lessons, practical applications, regular assessments, career guidance.</li>
-              <li>Support: Dedicated subject teachers, remedial support, extracurricular clubs.</li>
-            </ul>
-            <!-- END PERSONALIZE -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END JHS Section -->
-
-    <!-- (Optional) Special Programs / Links Section -->
-    <section class="section-padding text-center">
-        <div class="container">
-            <h2 class="mb-4">Explore Further</h2>
-            <p class="lead mb-4">Discover more about our specialized offerings and important academic dates.</p>
-            <a href="programs.html" class="btn custom-btn me-sm-2 mb-2 mb-sm-0">Our Special Programs</a>
-            <a href="academic-calendar.html" class="btn btn-outline-primary">View Academic Calendar</a>
-        </div>
-    </section>
-    <!-- END Special Programs Section -->
-
+    <!-- END Main Calendar Content Section -->
 
   </main>
 

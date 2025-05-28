@@ -1,289 +1,340 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Honeypot Academy in Adenta, Accra. Find our address, phone number, email, and send us a message. We'd love to hear from you.">
+  <meta name="author" content="Honeypot Academy">
+  <title>Contact Us - Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm path -->
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
 
-        <title>Honeypot Academy - Contact Us</title>
-        <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png">
+  <!-- 
+    Ensure the following CSS is in your css/custom-honeypot.css file
+    or uncomment the <style> tags below to include it directly for testing.
+  -->
+  <!--
+  <style>
+    .page-hero-section {
+      background-size: cover;
+      background-position: center center;
+      padding: 80px 0; 
+      color: #fff; 
+      text-align: center;
+      position: relative;
+    }
+    .page-hero-section::before { 
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.45); 
+    }
+    .page-hero-section .container {
+      position: relative; 
+      z-index: 2;
+    }
+    .page-hero-section .page-title {
+      font-size: 2.8rem; 
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .page-hero-section .lead {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+    .contact-info-icon {
+        font-size: 1.5rem; 
+        color: #0d6efd; /* Example: Bootstrap primary blue. Change to your brand color */
+    }
+    .map-responsive {
+        overflow:hidden;
+        padding-bottom:56.25%; 
+        position:relative;
+        height:0;
+    }
+    .map-responsive iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        border:0; 
+    }
+  </style>
+  -->
+</head>
+<body>
 
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <main id="main">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/slick.css"/>
-
-        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
-        
-<!--
-
-Tooplate 2127 Little Fashion
-
-https://www.tooplate.com/view/2127-little-fashion
-
--->
-    </head>
-    
-    <body>
-
-        <section class="preloader">
-            <div class="spinner">
-                <span class="sk-inner-circle"></span>
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+          <div class="d-lg-none">
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="team.html" class="bi-people-fill custom-icon" title="Our Team" aria-label="Our Team"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                  <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li> <!-- 'active' class added -->
+            </ul>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
             </div>
-        </section>
-    
-        <main>
-            <!-- Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                      <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy" width="50" height="50">
-                      <strong>Honeypot Academy</strong>
-                    </a>
-                    <div class="d-lg-none">
-                      <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-                      <a href="facilitator-detail.html" class="bi-pencil-square custom-icon" title="Our Team" aria-label="Our Team"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                            <li><a class="dropdown-item" href="about.html">About Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="about-history.html">History of Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="about-mission.html">Mission of Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
-                            <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
-                            <li><a class="dropdown-item" href="admissions-apply.html">Apply</a></li>
-                            <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                            <li><a class="dropdown-item" href="academics.html">Academics</a></li>
-                            <li><a class="dropdown-item" href="academics.html">Programs</a></li>
-                            <li><a class="dropdown-item" href="academics-calendar.html">Academic Calendar</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvents">
-                            <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
-                            <li><a class="dropdown-item" href="events-past.html">Past Events</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="facilitator-detail.html">Facilitators</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                      </ul>
-                      <div class="d-none d-lg-block">
-                        <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-                        <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
-                      </div>
-                    </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END Header / Navigation -->
+
+    <!-- Page Title / Simple Hero Section 
+    <section class="page-hero-section" style="background-image: url('images/ictlab/background2.jpg');">
+      <!-- Ensure 'images/ictlab/background2.jpg' is the banner image you want. 
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="lead">We're here to help. Reach out to us with any questions or to learn more about Honeypot Academy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page Title Section -->
+
+    <!-- Contact Details & Form Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Information Block -->
+          <div class="col-lg-5 col-12 mb-5 mb-lg-0">
+            <h2 class="mb-4">Contact Information</h2>
+            <div class="d-flex align-items-start mb-3">
+              <i class="bi bi-geo-alt-fill contact-info-icon me-3"></i>
+              <div>
+                <strong>Address:</strong><br>
+                Adenta, Accra, Ghana <br>
+                <!-- Add more specific address details if available, e.g., Plot No., Street Name -->
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <i class="bi bi-telephone-fill contact-info-icon me-3"></i>
+              <div>
+                <strong>Phone:</strong><br>
+                <a href="tel:+233553058243" class="text-decoration-none text-dark">+233 55 305 8243</a><br>
+                <a href="tel:+233500071744" class="text-decoration-none text-dark">+233 50 007 1744</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <i class="bi bi-envelope-fill contact-info-icon me-3"></i>
+              <div>
+                <strong>Email:</strong><br>
+                <a href="mailto:info@honeypotacademy.edu.gh" class="text-decoration-none text-dark">info@honeypotacademy.edu.gh</a>
+              </div>
+            </div>
+            <!-- Optional: Office Hours -->
+            <!--
+            <div class="d-flex align-items-start mb-3">
+              <i class="bi bi-clock-fill contact-info-icon me-3"></i>
+              <div>
+                <strong>Office Hours:</strong><br>
+                Monday - Friday: 8:00 AM - 4:00 PM<br>
+              </div>
+            </div>
+            -->
+            <h3 class="mt-5 mb-3">Connect With Us</h3>
+             <ul class="social-icon list-unstyled d-flex">
+                <!-- REPLACE # with your actual social media links -->
+                <li class="me-3 fs-4"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+                <li class="me-3 fs-4"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+                <li class="me-3 fs-4"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+                <li class="fs-4"><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Form Block -->
+          <div class="col-lg-7 col-12">
+            <h2 class="mb-4">Send Us a Message</h2>
+            <p class="mb-4">Have a question or need more information? Fill out the form below, and we'll get back to you as soon as possible.</p>
+            <!-- Form Action: Replace YOUR_FORMSPREE_ENDPOINT with your actual Formspree endpoint -->
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" name="name" id="contact-name" class="form-control" placeholder="Full Name" required>
+                    <label for="contact-name">Full Name</label>
                   </div>
-            </nav>
-        
-            <!-- Header Section -->
-            <section class="slick-slideshow">   
-                <div class="slick-custom">
-                    <img src="images/ictlab/teachers1.jpg" class="img-fluid" alt="">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title">Honeypot Academy</h1>
-
-                                    <p class="lead text-white mt-lg-3 mb-lg-5">The Right Start</p>
-
-                                    <a href="about.html" class="btn custom-btn">Learn more about us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="slick-custom">
-                    <img src="images/ictlab/learner3.JPG" class="img-fluid" alt="">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title">Honeypot Academy</h1>
-
-                                    <p class="lead text-white mt-lg-3 mb-lg-5">Empowering Young Minds for a Brighter Future</p>
-
-                                    <a href="academics.html" class="btn custom-btn">Explore The School</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="form-floating mb-3">
+                    <input type="email" name="email" id="contact-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                    <label for="contact-email">Email address</label>
+                  </div>
                 </div>
-
-                <div class="slick-custom">
-                    <img src="images/ictlab/learner2.JPG" class="img-fluid" alt="">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title">Honeypot Academy</h1>
-
-                                    <p class="lead text-white mt-lg-3 mb-lg-5">Building Foundations for Lifelong Learning</p>
-
-                                    <a href="admissions.html" class="btn custom-btn">Enroll now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" name="subject" id="contact-subject" class="form-control" placeholder="Subject" required>
+                    <label for="contact-subject">Subject</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="contact-message" name="message" placeholder="Leave a comment here" style="height: 150px" required></textarea>
+                    <label for="contact-message">Message</label>
+                  </div>
                 </div>
-
-            </section>
-        
-            <!-- Contact Section -->
-            <section class="contact section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <h2 class="mb-4">Get in <span>Touch</span></h2>
-        
-                            <form class="contact-form me-lg-5 pe-lg-3" role="form">
-                                <div class="form-floating">
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-                                    <label for="name">Full name</label>
-                                </div>
-        
-                                <div class="form-floating my-4">
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-                                    <label for="email">Email address</label>
-                                </div>
-        
-                                <div class="form-floating my-4">
-                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required>
-                                    <label for="subject">Subject</label>
-                                </div>
-        
-                                <div class="form-floating mb-4">
-                                    <textarea id="message" name="message" class="form-control" placeholder="Leave a message here" required style="height: 160px"></textarea>
-                                    <label for="message">How can we assist you?</label>
-                                </div>
-        
-                                <div class="col-lg-5 col-6">
-                                    <button type="submit" class="form-control btn-primary">Send Message</button>
-                                </div>
-                            </form>
-                        </div>
-        
-                        <div class="col-lg-6 col-12 mt-5 ms-auto">
-                            <div class="row">
-                                <div class="col-6 border-end contact-info">
-                                    <h6 class="mb-3">General Inquiries</h6>
-                                    <a href="mailto:info@HoneyPotacademy.com" class="custom-link">
-                                        info@HoneyPotacademy.com
-                                        <i class="bi-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-        
-                                <div class="col-6 contact-info">
-                                    <h6 class="mb-3">Admissions Office</h6>
-                                    <a href="mailto:admissions@HoneyPotacademy.com" class="custom-link">
-                                        admissions@HoneyPotacademy.com
-                                        <i class="bi-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-        
-                                <div class="col-6 border-top border-end contact-info">
-                                    <h6 class="mb-3">Campus Address</h6>
-                                    <p class="text-muted">Adentan, Accra, GH</p>
-                                </div>
-        
-                                <div class="col-6 border-top contact-info">
-                                    <h6 class="mb-3">Follow Us</h6>
-                                    <ul class="social-icon">
-                                        <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-                                        <li><a href="#" class="social-icon-link bi-twitter"></a></li>
-                                        <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
-                                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                  <button type="submit" class="btn custom-btn form-control">Send Message</button>
                 </div>
-            </section>
-        </main>
-        
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Details & Form Section -->
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-        
-                    <div class="col-lg-3 col-10 me-auto mb-4">
-                        <h4 class="text-white mb-3"><a href="index.html">HoneyPot</a> Academy</h4>
-                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
-                            Copyright © 2025 <strong>Honeypot Academy</strong>
-                        </p>
-                        <br>
-                        <p class="copyright-text">
-                            Designed by <a href="https://sites.google.com/view/violestudios" target="_blank">violestudios</a>
-                        </p>
+    <!-- Map Section -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Find Us Here</h2>
+                </div>
+                <div class="col-12">
+                    <div class="map-responsive shadow-sm rounded">
+                        <!-- Your Google Maps Embed Code -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.074303119805!2d-0.1669031!3d5.702405399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d3db8dda187%3A0xd7b5e4d0c7b27ef!2sHoneypot%20Cr%C3%A8che%20%26%20Pre-School!5e0!3m2!1sen!2sgh!4v1748276644049!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-        
-                    <div class="col-lg-5 col-8">
-                        <h5 class="text-white mb-3">Quick Links</h5>
-        
-                        <ul class="footer-menu d-flex flex-wrap">
-                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
-                            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
-                            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
-                            <li class="footer-menu-item"><a href="events.html" class="footer-menu-link">Events</a></li>
-                            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
-                        </ul>
-                    </div>
-        
-                    <div class="col-lg-3 col-4">
-                        <h5 class="text-white mb-3">Follow Us</h5>
-        
-                        <ul class="social-icon">
-                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
-                            <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
-                        </ul>
-                    </div>
-        
                 </div>
             </div>
-        </footer>
-        
+        </div>
+    </section>
+    <!-- END Map Section -->
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/Headroom.js"></script>
-        <script src="js/jQuery.headroom.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
+    <!-- Optional: Visit Us Section -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">Plan Your <span>Visit</span></h2>
+                    <p class="lead mb-4">We encourage prospective parents and students to visit Honeypot Academy to experience our welcoming environment firsthand. Please contact our admissions office to schedule a tour or inquire about our upcoming Open House days.</p>
+                    <a href="tel:+233553058243" class="btn custom-btn me-2 mb-2 mb-sm-0">Call to Schedule</a>
+                    <a href="admissions.html" class="btn btn-outline-primary mb-2 mb-sm-0">Admissions Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Visit Us Section -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
+            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
+            <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
+            <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
+          <ul class="footer-contact list-unstyled">
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END Footer -->
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/Headroom.js"></script> --> <!-- If using Headroom -->
+  <!-- <script src="js/jQuery.headroom.js"></script> --> <!-- If using Headroom -->
+  <script src="js/custom.js"></script>
+  <script>
+    // For Footer Copyright Year
+    if (document.getElementById("currentYear")) {
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    }
+  </script>
+
+</body>
 </html>

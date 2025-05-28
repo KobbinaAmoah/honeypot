@@ -1,255 +1,379 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about the admissions process at Honeypot Academy in Adenta, Accra. Find steps to apply, requirements, and how to join our school community.">
+  <meta name="author" content="Honeypot Academy">
+  <title>Admissions - Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm path -->
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
 
-        <title>Honeypot Academy - Admission</title>
-        <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png">
+  <!-- 
+    Ensure CSS for .page-hero-section and any new specific classes
+    are in your css/custom-honeypot.css file.
+    (Refer to contact.html for .page-hero-section CSS if needed)
+  -->
+</head>
+<body>
 
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <main id="main">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/slick.css"/>
-
-        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
-<!--
-
-Tooplate 2127 Little Fashion
-
-https://www.tooplate.com/view/2127-little-fashion
-
--->
-    </head>
-    
-    <body>
-
-        <section class="preloader">
-            <div class="spinner">
-                <span class="sk-inner-circle"></span>
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+          <div class="d-lg-none">
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="team.html" class="bi-people-fill custom-icon" title="Our Team" aria-label="Our Team"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <!-- Make this "Admissions" link active -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                  <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li> <!-- 'active' class added -->
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
             </div>
-        </section>
-    
-        <main>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                      <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy" width="50" height="50">
-                      <strong>Honeypot Academy</strong>
-                    </a>
-                    <div class="d-lg-none">
-                      <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-                      <a href="facilitator-detail.html" class="bi-pencil-square custom-icon" title="Our Team" aria-label="Our Team"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                            <li><a class="dropdown-item" href="about.html">About Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="about-history.html">History of Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="about-mission.html">Mission of Honeypot Academy</a></li>
-                            <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
-                            <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
-                            <li><a class="dropdown-item" href="admissions-apply.html">Apply</a></li>
-                            <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                            <li><a class="dropdown-item" href="academics.html">Academics</a></li>
-                            <li><a class="dropdown-item" href="academics.html">Programs</a></li>
-                            <li><a class="dropdown-item" href="academics-calendar.html">Academic Calendar</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvents">
-                            <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
-                            <li><a class="dropdown-item" href="events-past.html">Past Events</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="facilitator-detail.html">Facilitators</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                      </ul>
-                      <div class="d-none d-lg-block">
-                        <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-                        <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
-                      </div>
-                    </div>
-                  </div>
-            </nav>  
-            <header class="site-header section-padding-img site-header-image">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 header-info">
-                            <h1>
-                                <span class="d-block text-primary">Admissions</span>
-                                <span class="d-block text-dark">Open At</span>
-                                <span class="d-block text-primary">Honeypot Academy</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END Header / Navigation -->
 
-                            </h1>
-                            <p class="mt-3">Join our community of curious learners and dedicated educators, where we inspire growth and academic excellence.</p>
-                            <p>Explore our programs and see how Honeypot Academy can help your child reach their full potential.</p>
-                        </div>
+    <!-- Page Title / Simple Hero Section 
+    <section class="page-hero-section" style="background-image: url('YOUR_ADMISSIONS_BANNER_IMAGE.jpg');">
+      <!-- IMAGE: Welcoming image - e.g., diverse group of smiling students, parent interacting with staff, school entrance.
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="page-title">Admissions at Honeypot Academy</h1>
+            <!-- PERSONALIZE THIS LEAD TEXT 
+            <p class="lead">Your Journey to an Exceptional Education Starts Here.</p>
+            <!-- END PERSONALIZE 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page Title Section -->
+
+    <!-- Welcome to Admissions Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="mb-4">Welcome, Prospective Families!</h2>
+            <!-- PERSONALIZE THIS WELCOME MESSAGE & ADMISSIONS PHILOSOPHY -->
+            <p class="lead mb-3">Thank you for considering Honeypot Academy for your child's education. We understand that choosing the right school is a significant decision, and our admissions team is here to guide you every step of the way. We seek to enroll students who are curious, eager to learn, and will contribute positively to our vibrant school community.</p>
+            <p>Our admissions process is designed to be thorough yet straightforward, ensuring we get to know each applicant and family. We look for a good fit between the student, the family, and our school's values and academic environment. We are committed to creating a diverse and inclusive student body.</p>
+            <!-- END PERSONALIZE -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Welcome to Admissions Section -->
+
+    <!-- Steps to Apply / Admissions Process Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-5">Our Admissions Process</h2>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- PERSONALIZE THE STEPS AND ICONS -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center p-4 h-100 shadow-sm rounded">
+                        <div class="step-icon mb-3 fs-1 text-primary"><i class="bi bi-search"></i></div>
+                        <h4>1. Inquiry & Discovery</h4>
+                        <p>Explore our website, download our brochure, or contact us with any initial questions.</p>
                     </div>
                 </div>
-                <img src="images/ictlab/classroom1.jpg" class="header-image img-fluid" alt="Students at Honeypot Academy eager to learn and grow">
-            </header>
-            
-            <section class="admissions-process section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div style="overflow: hidden; max-height: 400px;">
-                                <img src="images/admissions.jpg" class="img-fluid" alt="Admissions" style="height: auto; width: 100%;">
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center p-4 h-100 shadow-sm rounded">
+                        <div class="step-icon mb-3 fs-1 text-primary"><i class="bi bi-calendar-check"></i></div>
+                        <h4>2. School Visit / Tour</h4>
+                        <p>We invite you to visit our campus, meet our team, and see our facilities. (Contact us to schedule).</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center p-4 h-100 shadow-sm rounded">
+                        <div class="step-icon mb-3 fs-1 text-primary"><i class="bi bi-file-earmark-text"></i></div>
+                        <h4>3. Application Submission</h4>
+                        <p>Complete and submit the application form along with all required documents.</p>
+                        <a href="apply.html" class="btn btn-sm btn-outline-primary mt-2">Go to Application</a>
+                        <!-- DESTINATION FILE TO CREATE: apply.html -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center p-4 h-100 shadow-sm rounded">
+                        <div class="step-icon mb-3 fs-1 text-primary"><i class="bi bi-person-check"></i></div>
+                        <h4>4. Assessment / Interview</h4>
+                        <p>Applicants may undergo a friendly assessment or interview to gauge readiness.</p>
+                    </div>
+                </div>
+                <!-- Add more steps if needed, e.g., Offer of Admission, Enrollment Confirmation -->
+                <!--
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center p-4 h-100 shadow-sm rounded">
+                        <div class="step-icon mb-3 fs-1 text-primary"><i class="bi bi-envelope-open"></i></div>
+                        <h4>5. Offer of Admission</h4>
+                        <p>Successful applicants will receive an offer of admission from the school.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center p-4 h-100 shadow-sm rounded">
+                        <div class="step-icon mb-3 fs-1 text-primary"><i class="bi bi-patch-check"></i></div>
+                        <h4>6. Enrollment</h4>
+                        <p>Complete enrollment formalities to secure your child's place at Honeypot Academy.</p>
+                    </div>
+                </div>
+                -->
+                <!-- END PERSONALIZE STEPS -->
+            </div>
+        </div>
+    </section>
+    <!-- END Steps to Apply Section -->
+
+    <!-- Grade Levels & Key Info Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                <!-- IMAGE: Students from different grade levels, or a vibrant classroom scene. -->
+                <img src="images/ictlab/math.jpg" class="img-fluid rounded shadow-sm" alt="Students at Honeypot Academy">
+            </div>
+            <div class="col-lg-6 col-12">
+                <h2 class="mb-4">Joining Our Learning Community</h2>
+                <!-- PERSONALIZE THIS CONTENT -->
+                <p>Honeypot Academy proudly offers a comprehensive educational program for students from:</p>
+                <ul>
+                    <li><strong>Kindergarten (Crèche, Nursery, KG1, KG2)</strong></li>
+                    <li><strong>Lower Primary (Grade 1 - 3)</strong></li>
+                    <li><strong>Upper Primary (Grade 4 - 6)</strong></li>
+                    <li><strong>Junior High School (JHS 1 - 3)</strong></li>
+                </ul>
+                <p>We aim to make the transition into our school as smooth as possible for new students and their families. Our supportive environment helps children adapt quickly and feel at home.</p>
+                <!-- END PERSONALIZE -->
+                <div class="mt-4">
+                    <a href="admissions-requirements.html" class="btn custom-btn me-2 mb-2">View Requirements</a>
+                    <!-- DESTINATION FILE TO CREATE: admissions-requirements.html -->
+                    <a href="contact.html#admissions-inquiry" class="btn btn-outline-primary mb-2">Contact Admissions</a> <!-- Or link directly to admissions officer email/phone -->
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Grade Levels & Key Info Section -->
+
+    <!-- Admissions FAQ Teaser Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-5">Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="admissionsFaqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                    <!-- PERSONALIZE QUESTION -->
+                                    What are the age requirements for Kindergarten?
+                                    <!-- END PERSONALIZE -->
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#admissionsFaqAccordion">
+                                <div class="accordion-body">
+                                    <!-- PERSONALIZE ANSWER -->
+                                    For Crèche, children can join from [X months/years]. For Nursery, typically [Y years] by [Date/Month]. KG1 is usually [Z years]. Please see our detailed requirements page or contact us for specific age cut-offs.
+                                    <!-- END PERSONALIZE -->
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-12">
-                            <h2>
-                                <span class="d-block text-primary">How to Apply to</span>
-                                <span class="d-block text-dark">Honeypot Academy</span>
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    <!-- PERSONALIZE QUESTION -->
+                                    Do you offer sibling discounts?
+                                    <!-- END PERSONALIZE -->
+                                </button>
                             </h2>
-                            <ol>
-                                <li><strong>Step 1: </strong>Purchase and Submit the application form.</li>
-                                <li><strong>Step 2: </strong>Schedule an entrance assessment.</li>
-                                <li><strong>Step 3: </strong>Attend an interview (parents and student).</li>
-                                <li><strong>Step 4: </strong>Receive an admissions decision.</li>
-                            </ol>
-                            <a href="apply-now.html" class="btn custom-btn mt-3">Apply Now</a>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#admissionsFaqAccordion">
+                                <div class="accordion-body">
+                                    <!-- PERSONALIZE ANSWER -->
+                                    Yes, Honeypot Academy offers a discount for families with multiple children enrolled. Please contact our admissions office for details on our current fee structure and sibling discounts.
+                                    <!-- END PERSONALIZE -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 3 (Add more if needed) -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    <!-- PERSONALIZE QUESTION -->
+                                    What is the student-teacher ratio?
+                                    <!-- END PERSONALIZE -->
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#admissionsFaqAccordion">
+                                <div class="accordion-body">
+                                    <!-- PERSONALIZE ANSWER -->
+                                    We strive to maintain a low student-teacher ratio to ensure personalized attention. For specific ratios per grade level, please refer to our academics page or contact admissions.
+                                    <!-- END PERSONALIZE -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            
-            <section class="important-dates section-padding bg-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h3>                                
-                                <span class="d-block text-primary">Important-Dates of</span>
-                                <span class="d-block text-dark">Honeypot Academy</span>
-                            </h3>
-                            <p>Stay on top of application deadlines and other key dates.</p>
-                            <ul>
-                                <li><strong>Application Open:</strong> January 15</li>
-                                <li><strong>Application Deadline:</strong> March 31</li>
-                                <li><strong>Entrance Assessment:</strong> April 15</li>
-                                <li><strong>Decision Release:</strong> May 20</li>
-                            </ul>
-                        </div>
+                    <div class="text-center mt-4">
+                        <a href="faq.html#admissions-faqs" class="btn custom-btn-outline">View All FAQs</a>
+                        <!-- DESTINATION FILE TO CREATE: faq.html (and ensure an ID like 'admissions-faqs' exists there) -->
                     </div>
                 </div>
-            </section>
-            
-            <section class="requirements section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <h4>Admission Requirements</h4>
-                            <p>We would love to have your curious, passionate minds eager to learn. Our admission requirements include:</p>
-                            <ul>
-                                <li>Completed Application Form</li>
-                                <li>Entrance Exam Results</li>
-                                <li>Previous Academic Records</li>
-                                <li>Recommendation Letters (optional)</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <h4>Get in Touch</h4>
-                            <p>If you have any questions, feel free to reach out:</p>
-                            <p><strong>Email:</strong> admissions@HoneyPotacademy.com</p>
-                            <p><strong>Phone:</strong> +233 27 749 7105</p>
-                            <p>Our team is here to guide you through the admissions process.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="testimonials section-padding bg-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h3>                                
-                                <span class="d-block text-primary">What Student at</span>
-                                <span class="d-block text-dark">Honeypot Academy</span>
-                            </h3>
-                            <p>Hear from students who have found a home at Honeypot Academy.</p>
-                            <blockquote class="blockquote">"Honeypot Academy has changed my life for the better. The teachers are supportive, and the learning experience is engaging and fun!"</blockquote>
-                            <footer class="blockquote-footer">Duke</footer>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-        
+            </div>
+        </div>
+    </section>
+    <!-- END Admissions FAQ Teaser Section -->
 
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-            
-                        <div class="col-lg-3 col-10 me-auto mb-4">
-                            <h4 class="text-white mb-3"><a href="index.html">HoneyPot</a> Academy</h4>
-                            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2025 <strong>Honeypot Academy</strong></p>
-                            <br>
-                            Designed by <a href="https://sites.google.com/view/violestudios" target="_blank">violestudios</a>
-                        </div>
-            
-                        <div class="col-lg-5 col-8">
-                            <h5 class="text-white mb-3">Sitemap</h5>
-            
-                            <ul class="footer-menu d-flex flex-wrap">
-                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
-                                <li class="footer-menu-item"><a href="programs.html" class="footer-menu-link">Programs</a></li>
-                                <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
-                                <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
-                                <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
-                            </ul>
-                        </div>
-            
-                        <div class="col-lg-3 col-4">
-                            <h5 class="text-white mb-3">Follow Us</h5>
-            
-                            <ul class="social-icon">
-                                <li><a href="https://www.youtube.com" class="social-icon-link bi-youtube" target="_blank"></a></li>
-                                <li><a href="https://www.whatsapp.com" class="social-icon-link bi-whatsapp" target="_blank"></a></li>
-                                <li><a href="https://www.instagram.com" class="social-icon-link bi-instagram" target="_blank"></a></li>
-                                <li><a href="https://www.facebook.com" class="social-icon-link bi-facebook" target="_blank"></a></li>
-                            </ul>
-                        </div>
-            
-                    </div>
+    <!-- Contact Admissions Office Section -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">Have More Questions?</h2>
+                    <p class="lead mb-4">Our admissions team is ready to assist you. Please don't hesitate to reach out.</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i><strong>Call Admissions:</strong> <a href="tel:+233553058243">+233 55 305 8243</a></p>
+                    <p><i class="bi bi-envelope-fill me-2"></i><strong>Email Admissions:</strong> <a href="mailto:admissions@honeypotacademy.edu.gh">admissions@honeypotacademy.edu.gh</a></p>
+                    <!-- PERSONALIZE: Confirm if admissions has a separate email/phone or uses general contact -->
+                    <a href="contact.html" class="btn custom-btn mt-3">Full Contact Details</a>
                 </div>
-            </footer>
+            </div>
+        </div>
+    </section>
+    <!-- END Contact Admissions Office Section -->
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/Headroom.js"></script>
-        <script src="js/jQuery.headroom.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/custom.js"></script>
+  </main>
 
-    </body>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <!-- PERSONALIZE THIS SHORT DESCRIPTION (Optional) -->
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <!-- END PERSONALIZE -->
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
+            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
+            <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
+            <!-- DESTINATION FILE TO CREATE: faq.html -->
+            <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
+            <!-- DESTINATION FILE TO CREATE: sitemap.html -->
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
+          <ul class="footer-contact list-unstyled">
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <!-- REPLACE # with your actual social media links -->
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END Footer -->
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    if (document.getElementById("currentYear")) {
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    }
+  </script>
+
+</body>
 </html>

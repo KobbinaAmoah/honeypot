@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the academic programs at Honeypot Academy, from Pre-School to Junior High School. Learn about our curriculum and educational philosophy in Adenta, Accra.">
+  <meta name="description" content="Meet the dedicated team of facilitators and staff at Honeypot Academy, committed to providing quality education in Adenta, Accra.">
   <meta name="author" content="Honeypot Academy">
-  <title>Academics - Honeypot Academy</title>
+  <title>Our Team - Honeypot Academy</title>
   <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,29 +13,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/slick.css"/> --> <!-- Likely not needed -->
   <link href="css/tooplate-little-fashion.css" rel="stylesheet">
   <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
 
   <!-- Remember to add .page-hero-section CSS from about.html to custom-honeypot.css if not already there -->
-  <style>
-    .academic-level-section {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      /* border-bottom: 1px solid #eee; */ /* Optional separator */
-    }
-    .academic-level-section:last-of-type {
-        border-bottom: none;
-    }
-    .academic-level-section h3 {
-        color: var(--primary-color, #007bff); /* Or your theme's heading color */
-        margin-bottom: 1rem;
-    }
-    .academic-level-section .level-image {
-        max-height: 300px;
-        object-fit: cover;
-        border-radius: 0.25rem;
-    }
-  </style>
 </head>
 <body>
 
@@ -60,18 +42,18 @@
           </a>
           <div class="d-lg-none">
             <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-            <a href="academics.html" class="bi-book custom-icon active" title="Academics" aria-label="Academics"></a> <!-- Active Academics Icon -->
+            <a href="team.html" class="bi-people-fill custom-icon active" title="Our Team" aria-label="Our Team"></a> <!-- Active class added -->
           </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a> <!-- Active on main About dropdown -->
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
                   <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
                   <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
                   <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
-                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                  <li><a class="dropdown-item active" href="team.html">Our Team</a></li> <!-- Active on this specific page -->
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -83,9 +65,9 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a> <!-- Academics Dropdown Active -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li> <!-- This page active -->
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
                   <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
                   <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
                 </ul>
@@ -105,30 +87,30 @@
     </header>
     <!-- END Header / Navigation -->
 
-    <!-- Page Title / Simple Hero Section 
-    <section class="page-hero-section" style="background-image: url('YOUR_ACADEMICS_PAGE_BANNER_IMAGE.jpg');">
-      <!-- IMAGE: A wide banner image, students learning, classroom, library, or diverse educational materials. 
+    <!-- Page Title / Simple Hero Section -->
+    <section class="page-hero-section" style="background-image: url('YOUR_TEAM_PAGE_BANNER_IMAGE.jpg');">
+      <!-- IMAGE: A wide banner image, perhaps a group photo of staff, or a general campus image. -->
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="page-title">Academics at Honeypot Academy</h1>
-            <!-- PERSONALIZE THIS LEAD TEXT 
-            <p class="lead">Nurturing Minds, Building Futures: Our Approach to Education.</p>
-            <!-- END PERSONALIZE 
+            <h1 class="page-title">Meet Our Dedicated Team</h1>
+            <!-- PERSONALIZE THIS LEAD TEXT -->
+            <p class="lead">The heart and soul of Honeypot Academy – passionate educators committed to your child's success.</p>
+            <!-- END PERSONALIZE -->
           </div>
         </div>
       </div>
     </section>
     <!-- END Page Title Section -->
 
-    <!-- Introduction to Academics Section -->
+    <!-- Introduction Section (Optional) -->
     <section class="section-padding">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <!-- PERSONALIZE THIS INTRODUCTION -->
-            <h2 class="mb-3">Our Commitment to Educational Excellence</h2>
-            <p class="lead">At Honeypot Academy, we are dedicated to providing a comprehensive and stimulating academic experience that caters to the diverse needs of our learners from Pre-School through to Junior High School. Our curriculum is designed to foster critical thinking, creativity, and a lifelong passion for learning, ensuring our students are well-prepared for future academic pursuits and life beyond the classroom. We blend rigorous academic standards with a supportive and engaging environment, empowering every child to achieve their full potential.</p>
+            <h2 class="mb-3">Passionate Educators, Inspiring Futures</h2>
+            <p class="lead mb-0">At Honeypot Academy, our facilitators are more than just teachers; they are mentors, guides, and partners in your child's educational journey. Each member of our team brings a wealth of experience, dedication, and a genuine love for teaching, creating a vibrant and supportive learning environment for all our students.</p>
             <!-- END PERSONALIZE -->
           </div>
         </div>
@@ -137,89 +119,90 @@
     <!-- END Introduction Section -->
 
 
-    <!-- Pre-School Program Section -->
-    <section class="academic-level-section bg-light"> <!-- Alternating backgrounds can be nice -->
+    <!-- Facilitator Listing Section -->
+    <section class="section-padding pt-0"> <!-- pt-0 to reduce space if intro section is used -->
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-            <!-- IMAGE: Happy pre-schoolers engaged in play-based learning. -->
-            <img src="YOUR_PRESCHOOL_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Pre-School Program at Honeypot Academy">
+        <div class="row g-4"> <!-- g-4 for gutters/spacing -->
+
+          <!-- Facilitator Card 1: Mrs. Belinda -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card facilitator-card h-100 text-center shadow-sm">
+              <!-- IMAGE: Headshot of Mrs. Belinda -->
+              <a href="mrs-belinda-detail.html"> <!-- Link to her detail page -->
+                <img src="images/ictlab/belindahoneypot.jpg" class="card-img-top facilitator-card-img" alt="Mrs. Belinda, Head Mistress">
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title facilitator-name"><a href="mrs-belinda-detail.html" class="text-decoration-none text-dark stretched-link-pseudo">Mrs. Belinda</a></h5>
+                <p class="card-text facilitator-role text-muted mb-2">Head Mistress</p>
+                <!-- Optional: <p class="card-text small">A brief tagline about her...</p> -->
+                <!-- The stretched-link behavior is achieved by making the <a> around the image and name work for the whole card, or by adding stretched-link to a specific button -->
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                 <a href="mrs-belinda-detail.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-7 col-12">
-            <h3>Our Pre-School / Early Years Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>Our Early Years program provides a warm, nurturing, and stimulating environment for our youngest learners (ages [X] to [Y]). We focus on play-based learning, fostering social skills, language development, creativity, and foundational numeracy and literacy. Our experienced facilitators guide children through exploration and discovery, building a strong foundation for future learning.</p>
-            <ul>
-              <li>Key Focus: Social-emotional development, early literacy & numeracy, motor skills.</li>
-              <li>Approach: Play-based, interactive activities, storytelling, arts & crafts.</li>
-              <li>Environment: Safe, colorful, and engaging classrooms and play areas.</li>
-            </ul>
-            <!-- END PERSONALIZE -->
+          <!-- DESTINATION FILE TO CREATE (if not already): mrs-belinda-detail.html -->
+
+          <!-- Facilitator Card 2: Mr. Afriyie -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card facilitator-card h-100 text-center shadow-sm">
+              <!-- IMAGE: Headshot of Mr. Afriyie -->
+              <a href="mr-afriyie-detail.html">
+                <img src="images/facilitators/mr_afriye.jpg" class="card-img-top facilitator-card-img" alt="Mr. Afriyie, Head Teacher JHS">
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title facilitator-name"><a href="mr-afriyie-detail.html" class="text-decoration-none text-dark stretched-link-pseudo">Mr. Afriyie</a></h5>
+                <p class="card-text facilitator-role text-muted mb-2">Head Teacher JHS</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                 <a href="mr-afriyie-detail.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+              </div>
+            </div>
           </div>
-        </div>
+          <!-- DESTINATION FILE TO CREATE (if not already): mr-afriyie-detail.html -->
+
+          <!-- Facilitator Card 3: Mrs. Akosua -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card facilitator-card h-100 text-center shadow-sm">
+              <!-- IMAGE: Headshot of Mrs. Akosua -->
+              <a href="mrs-akosua-detail.html">
+                <img src="images/ictlab/akosuahoneypot.jpg" class="card-img-top facilitator-card-img" alt="Mrs. Akosua, Pre-School Head Teacher">
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title facilitator-name"><a href="mrs-akosua-detail.html" class="text-decoration-none text-dark stretched-link-pseudo">Mrs. Akosua</a></h5>
+                <p class="card-text facilitator-role text-muted mb-2">Pre-School Head Teacher</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                 <a href="mrs-akosua-detail.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+          <!-- DESTINATION FILE TO CREATE (if not already): mrs-akosua-detail.html -->
+
+          <!-- === ADD MORE FACILITATOR CARDS HERE === -->
+          <!-- Example for another facilitator -->
+          <!--
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card facilitator-card h-100 text-center shadow-sm">
+              <a href="FACILITATOR_DETAIL_PAGE_FILENAME.html">
+                <img src="images/facilitators/FACILITATOR_PHOTO_FILENAME.jpg" class="card-img-top facilitator-card-img" alt="[Facilitator Name]">
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title facilitator-name"><a href="FACILITATOR_DETAIL_PAGE_FILENAME.html" class="text-decoration-none text-dark stretched-link-pseudo">[Facilitator Name]</a></h5>
+                <p class="card-text facilitator-role text-muted mb-2">[Facilitator Title]</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                 <a href="FACILITATOR_DETAIL_PAGE_FILENAME.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+          -->
+
+        </div> <!-- End .row for facilitator cards -->
       </div>
     </section>
-    <!-- END Pre-School Section -->
-
-    <!-- Primary School Program Section -->
-    <section class="academic-level-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 col-12 order-lg-1"> <!-- Text first on larger screens -->
-            <h3>Our Primary School Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>The Primary School program at Honeypot Academy (catering to ages [X] to [Y], covering Lower and Upper Primary) builds upon the foundational skills developed in Pre-School. We follow the GES curriculum, enriched with co-curricular activities to provide a holistic education. Students engage in core subjects such as English, Mathematics, Science, and Social Studies (Our World Our People), alongside Creative Arts, Physical Education, and ICT.</p>
-            <ul>
-              <li>Key Focus: Developing strong literacy and numeracy, critical thinking, inquiry skills.</li>
-              <li>Approach: Student-centered learning, project-based activities, collaborative work.</li>
-              <li>Curriculum: Aligned with GES standards, emphasis on Ghanaian culture and values.</li>
-            </ul>
-            <!-- END PERSONALIZE -->
-          </div>
-          <div class="col-lg-5 col-12 order-lg-2 mt-4 mt-lg-0">
-            <!-- IMAGE: Primary school students in a classroom or doing a project. -->
-            <img src="YOUR_PRIMARY_SCHOOL_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Primary School Program at Honeypot Academy">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Primary School Section -->
-
-    <!-- Junior High School (JHS) Program Section -->
-    <section class="academic-level-section bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-            <!-- IMAGE: JHS students in a lab, library, or focused learning environment. -->
-            <img src="YOUR_JHS_IMAGE.jpg" class="img-fluid level-image shadow-sm" alt="Junior High School Program at Honeypot Academy">
-          </div>
-          <div class="col-lg-7 col-12">
-            <h3>Our Junior High School (JHS) Program</h3>
-            <!-- PERSONALIZE THIS DESCRIPTION -->
-            <p>Our Junior High School program (Basic 7 to Basic 9) prepares students for the Basic Education Certificate Examination (BECE) and for success in their future academic endeavors. We offer a rigorous curriculum that deepens subject knowledge, hones analytical skills, and encourages independent learning. Emphasis is placed on core subjects, ICT proficiency, and character development, ensuring our graduates are confident, responsible, and well-prepared young adults.</p>
-            <ul>
-              <li>Key Focus: BECE preparation, advanced subject knowledge, research skills, leadership.</li>
-              <li>Approach: Interactive lessons, practical applications, regular assessments, career guidance.</li>
-              <li>Support: Dedicated subject teachers, remedial support, extracurricular clubs.</li>
-            </ul>
-            <!-- END PERSONALIZE -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END JHS Section -->
-
-    <!-- (Optional) Special Programs / Links Section -->
-    <section class="section-padding text-center">
-        <div class="container">
-            <h2 class="mb-4">Explore Further</h2>
-            <p class="lead mb-4">Discover more about our specialized offerings and important academic dates.</p>
-            <a href="programs.html" class="btn custom-btn me-sm-2 mb-2 mb-sm-0">Our Special Programs</a>
-            <a href="academic-calendar.html" class="btn btn-outline-primary">View Academic Calendar</a>
-        </div>
-    </section>
-    <!-- END Special Programs Section -->
-
+    <!-- END Facilitator Listing Section -->
 
   </main>
 
@@ -227,16 +210,12 @@
   <footer class="site-footer">
     <div class="container">
       <div class="row">
-
         <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
           <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
-          <!-- PERSONALIZE THIS SHORT DESCRIPTION (Optional) -->
           <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
-          <!-- END PERSONALIZE -->
           <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
           <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
         </div>
-
         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
           <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
           <ul class="footer-menu list-unstyled">
@@ -247,12 +226,9 @@
             <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
             <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
             <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
-            <!-- DESTINATION FILE TO CREATE: faq.html -->
             <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
-            <!-- DESTINATION FILE TO CREATE: sitemap.html -->
           </ul>
         </div>
-
         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
           <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
           <ul class="footer-contact list-unstyled">
@@ -262,18 +238,15 @@
             <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
           </ul>
         </div>
-
         <div class="col-lg-2 col-md-6 col-12">
           <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
           <ul class="social-icon list-unstyled d-flex">
-            <!-- REPLACE # with your actual social media links -->
             <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
             <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
             <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
             <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
           </ul>
         </div>
-
       </div>
     </div>
   </footer>
@@ -282,11 +255,12 @@
   <!-- JAVASCRIPT FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/Headroom.js"></script> 
+  <script src="js/jQuery.headroom.js"></script> 
+  <script src="js/slick.min.js"></script>
   <script src="js/custom.js"></script>
   <script>
-    if (document.getElementById("currentYear")) {
-        document.getElementById("currentYear").textContent = new Date().getFullYear();
-    }
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
 
 </body>

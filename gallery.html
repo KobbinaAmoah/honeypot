@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the photo gallery of Honeypot Academy. See moments from our events, student activities, and school life in Adenta, Accra.">
+  <meta name="author" content="Honeypot Academy">
+  <title>Gallery - Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <!-- === POTENTIAL LIGHTBOX PLUGIN CSS (Example) === -->
+  <!-- <link rel="stylesheet" href="path/to/lightbox/dist/css/lightbox.min.css"> -->
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
+
+  <!-- Remember to add .page-hero-section CSS from about.html to custom-honeypot.css if not already there -->
+  <style>
+    /* Basic styling for gallery items */
+    .gallery-item {
+      overflow: hidden; /* Ensures images don't break out of rounded corners */
+      border-radius: 0.25rem; /* Bootstrap's default rounded corner size */
+      box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); /* Bootstrap's shadow-sm */
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px; /* Or your preferred height */
+      object-fit: cover; /* Scales image to cover, cropping if necessary */
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery-item a:hover img {
+      transform: scale(1.05); /* Slight zoom effect on hover */
+    }
+    .gallery-item .caption {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      background-color: rgba(0,0,0,0.03); /* Light background for caption */
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+          <div class="d-lg-none">
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="gallery.html" class="bi-images custom-icon active" title="Gallery" aria-label="Gallery"></a> <!-- Active Gallery Icon -->
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                  <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li> <!-- Gallery Link Active -->
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END Header / Navigation -->
+
+    <!-- Page Title / Simple Hero Section 
+    <section class="page-hero-section" style="background-image: url('YOUR_GALLERY_PAGE_BANNER_IMAGE.jpg');">
+      <!-- IMAGE: A wide banner image, perhaps a vibrant collage of school activities or a captivating event photo. 
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="page-title">Honeypot Academy Gallery</h1>
+            <!-- PERSONALIZE THIS LEAD TEXT 
+            <p class="lead">A Glimpse into Our Vibrant School Life and Cherished Moments.</p>
+            <!-- END PERSONALIZE 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page Title Section -->
+
+    <!-- Introduction Section (Optional) -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <!-- PERSONALIZE THIS INTRODUCTION -->
+            <h2 class="mb-3">Moments & Memories</h2>
+            <p class="lead mb-0">Explore our gallery to see the engaging activities, special events, and everyday learning experiences that make Honeypot Academy a unique and joyful place to grow. Click on any image to view it larger.</p>
+            <!-- END PERSONALIZE -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Introduction Section -->
+
+
+    <!-- Gallery Grid Section -->
+    <section class="section-padding pt-0">
+      <div class="container">
+        <!-- === Example: Gallery Section/Album Title (Optional) === -->
+   
+        <div class="row mb-4">
+            <div class="col-12">
+                <h3 class="gallery-section-title">Trip Highlights</h3>
+                <hr>
+            </div>
+        </div>
+     
+
+        <div class="row g-3"> <!-- g-3 for smaller gutters, adjust as needed -->
+
+          <!-- Gallery Item 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <!-- Link to the full-size image. Add data-lightbox="album-name" if using a lightbox plugin -->
+              <a href="images/ictlab/events/recreation11.jpg" data-gallery="honeypot-gallery" data-caption="Optional caption for image 1">
+                <!-- Thumbnail image -->
+                <img src="images/ictlab/events/recreation11.jpg" class="img-fluid" alt="Gallery Image 1 Description">
+              </a>
+              <!-- Optional: Visible caption below image -->
+              <!-- <div class="caption">Optional caption for image 1</div> -->
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/recreation1.jpeg" data-gallery="honeypot-gallery" data-caption="Science Fair Project">
+                <img src="images/ictlab/events/recreation1.jpeg" class="img-fluid" alt="Gallery Image 2 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/recreation3.jpeg" data-gallery="honeypot-gallery" data-caption="Cultural Day Performance">
+                <img src="images/ictlab/events/recreation3.jpeg" class="img-fluid" alt="Gallery Image 3 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/recreation4.jpeg" data-gallery="honeypot-gallery" data-caption="Students in the new ICT Lab">
+                <img src="images/ictlab/events/recreation4.jpeg" class="img-fluid" alt="Gallery Image 4 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/recreation5.jpeg" data-gallery="honeypot-gallery" data-caption="Sports Day Fun">
+                <img src="images/ictlab/events/recreation5.jpeg" class="img-fluid" alt="Gallery Image 5 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/recreation6.jpeg" data-gallery="honeypot-gallery" data-caption="Classroom Activity">
+                <img src="images/ictlab/events/recreation6.jpeg" class="img-fluid" alt="Gallery Image 6 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/recreation7.jpeg" data-gallery="honeypot-gallery" data-caption="Art & Craft Session">
+                <img src="images/ictlab/events/recreation7.jpeg" class="img-fluid" alt="Gallery Image 7 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/recreation10.jpg" data-gallery="honeypot-gallery" data-caption="Graduation Day Smiles">
+                <img src="images/ictlab/events/recreation10.jpg" class="img-fluid" alt="Gallery Image 8 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- === ADD MORE GALLERY ITEMS HERE === -->
+          <!-- Duplicate the col-lg-3... block for each new image -->
+
+        </div> <!-- End .row for gallery items -->
+      </div>
+    </section>
+    <!-- END Gallery Grid Section -->
+     <section class="section-padding pt-0">
+      <div class="container">
+        <!-- === Example: Gallery Section/Album Title (Optional) === -->
+   
+        <div class="row mb-4">
+            <div class="col-12">
+                <h3 class="gallery-section-title">Ghana Day Highlights</h3>
+                <hr>
+            </div>
+        </div>
+     
+
+        <div class="row g-3"> <!-- g-3 for smaller gutters, adjust as needed -->
+
+          <!-- Gallery Item 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <!-- Link to the full-size image. Add data-lightbox="album-name" if using a lightbox plugin -->
+              <a href="images/ictlab/events/ghadays.jpeg" data-gallery="honeypot-gallery" data-caption="Optional caption for image 1">
+                <!-- Thumbnail image -->
+                <img src="images/ictlab/events/ghadays.jpeg" class="img-fluid" alt="Gallery Image 1 Description">
+              </a>
+              <!-- Optional: Visible caption below image -->
+              <!-- <div class="caption">Optional caption for image 1</div> -->
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/ghanaday celebrations.jpeg" data-gallery="honeypot-gallery" data-caption="Science Fair Project">
+                <img src="images/ictlab/events/ghanaday celebrations.jpeg" class="img-fluid" alt="Gallery Image 2 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/ghanaday.jpeg" data-gallery="honeypot-gallery" data-caption="Cultural Day Performance">
+                <img src="images/ictlab/events/ghanaday.jpeg" class="img-fluid" alt="Gallery Image 3 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/ghandayjudges.jpeg" data-gallery="honeypot-gallery" data-caption="Students in the new ICT Lab">
+                <img src="images/ictlab/events/ghandayjudges.jpeg" class="img-fluid" alt="Gallery Image 4 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/ghandaykids4.jpeg" data-gallery="honeypot-gallery" data-caption="Sports Day Fun">
+                <img src="images/ictlab/events/ghandaykids4.jpeg" class="img-fluid" alt="Gallery Image 5 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/ghdaykids1.jpeg" data-gallery="honeypot-gallery" data-caption="Classroom Activity">
+                <img src="images/ictlab/events/ghdaykids1.jpeg" class="img-fluid" alt="Gallery Image 6 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/ghdaycontestants.jpeg" data-gallery="honeypot-gallery" data-caption="Art & Craft Session">
+                <img src="images/ictlab/events/ghdaycontestants.jpeg" class="img-fluid" alt="Gallery Image 7 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="gallery-item">
+              <a href="images/ictlab/events/ghday6.jpeg" data-gallery="honeypot-gallery" data-caption="Graduation Day Smiles">
+                <img src="images/ictlab/events/ghday6.jpeg" class="img-fluid" alt="Gallery Image 8 Description">
+              </a>
+            </div>
+          </div>
+
+          <!-- === ADD MORE GALLERY ITEMS HERE === -->
+          <!-- Duplicate the col-lg-3... block for each new image -->
+
+        </div> <!-- End .row for gallery items -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (Copy from other pages) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <!-- PERSONALIZE THIS SHORT DESCRIPTION (Optional) -->
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <!-- END PERSONALIZE -->
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
+            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
+            <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
+            <!-- DESTINATION FILE TO CREATE: faq.html -->
+            <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
+            <!-- DESTINATION FILE TO CREATE: sitemap.html -->
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
+          <ul class="footer-contact list-unstyled">
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <!-- REPLACE # with your actual social media links -->
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END Footer -->
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- === POTENTIAL LIGHTBOX PLUGIN JS (Example) === -->
+  <!-- <script src="path/to/lightbox/dist/js/lightbox.min.js"></script> -->
+  <!-- Example initialization for Lightbox2 plugin:
+  <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      })
+  </script>
+  -->
+  <!-- Example initialization for GLightbox (using Bootstrap 5 integration):
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+        selector: '[data-gallery="honeypot-gallery"]' // Matches the data-gallery attribute on your <a> tags
+    });
+  </script>
+  Note: GLightbox also requires its CSS. If using GLightbox, add this to head:
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  -->
+
+  <script src="js/custom.js"></script>
+  <script>
+    // Ensure this runs if not part of pasted footer
+    if (document.getElementById("currentYear")) {
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    }
+  </script>
+
+</body>
+</html>
