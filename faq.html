@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find answers to frequently asked questions about Honeypot Academy, covering admissions, academics, school life, and more.">
+  <meta name="author" content="Honeypot Academy">
+  <title>FAQ - Frequently Asked Questions | Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
+
+  <!-- Remember to add .page-hero-section CSS from about.html to custom-honeypot.css if not already there -->
+  <style>
+    .accordion-button:not(.collapsed) {
+      color: var(--primary-color, #007bff);
+      background-color: #e7f1ff; /* Light background for active accordion header */
+    }
+    .accordion-button:focus {
+      box-shadow: none; /* Remove default focus shadow if desired */
+    }
+    .faq-section-title {
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--secondary-color, #6c757d);
+        display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+          <div class="d-lg-none">
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
+            <!-- Maybe add a generic help icon for FAQ on mobile if space allows, or rely on footer link -->
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <!-- ... (other nav items) ... -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <!-- The FAQ link is usually in the footer, but you could add it here if desired -->
+            </ul>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END Header / Navigation -->
+
+    <!-- Page Title / Simple Hero Section -->
+    <section class="page-hero-section" style="background-image: url('YOUR_FAQ_PAGE_BANNER_IMAGE.jpg');">
+      <!-- IMAGE: A wide banner image, perhaps people looking thoughtful, question marks, or a helpful staff member. -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="page-title">Frequently Asked Questions (FAQ)</h1>
+            <!-- PERSONALIZE THIS LEAD TEXT -->
+            <p class="lead">Your common questions about Honeypot Academy, answered.</p>
+            <!-- END PERSONALIZE -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page Title Section -->
+
+    <!-- Introduction Section (Optional) -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <!-- PERSONALIZE THIS INTRODUCTION -->
+            <h2 class="mb-3">Have Questions? We're Here to Help!</h2>
+            <p class="lead">We've compiled a list of frequently asked questions to provide you with quick answers. If you don't find what you're looking for, please don't hesitate to <a href="contact.html">contact us</a> directly.</p>
+            <!-- END PERSONALIZE -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Introduction Section -->
+
+
+    <!-- FAQ Listing Section with Accordion -->
+    <section class="section-padding pt-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+
+            <!-- === CATEGORY 1: ADMISSIONS (Optional Category Title) === -->
+            <h3 class="faq-section-title text-center">Admissions</h3>
+            <div class="accordion" id="faqAccordionAdmissions">
+
+              <!-- FAQ Item 1.1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAdmissionsOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmissionsOne" aria-expanded="false" aria-controls="collapseAdmissionsOne">
+                    <!-- QUESTION 1.1 -->
+                    What are the age requirements for admission into Pre-School?
+                  </button>
+                </h2>
+                <div id="collapseAdmissionsOne" class="accordion-collapse collapse" aria-labelledby="headingAdmissionsOne" data-bs-parent="#faqAccordionAdmissions">
+                  <div class="accordion-body">
+                    <!-- ANSWER 1.1 -->
+                    <strong>PERSONALIZE:</strong> For our Pre-School program, children should typically be between the ages of [X] and [Y] years old by [specific date or start of term]. Please visit our <a href="admissions-requirements.html">admissions requirements page</a> for detailed age criteria for each class.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 1.2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAdmissionsTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmissionsTwo" aria-expanded="false" aria-controls="collapseAdmissionsTwo">
+                    <!-- QUESTION 1.2 -->
+                    How do I apply for admission?
+                  </button>
+                </h2>
+                <div id="collapseAdmissionsTwo" class="accordion-collapse collapse" aria-labelledby="headingAdmissionsTwo" data-bs-parent="#faqAccordionAdmissions">
+                  <div class="accordion-body">
+                    <!-- ANSWER 1.2 -->
+                    <strong>PERSONALIZE:</strong> You can start the application process by [e.g., visiting the school office to pick up an application form, downloading the form from our website, or contacting our admissions officer]. Please see our <a href="apply.html">How to Apply</a> page for detailed steps.
+                  </div>
+                </div>
+              </div>
+              <!-- Add more Admission FAQs here -->
+            </div>
+
+
+            <!-- === CATEGORY 2: ACADEMICS (Optional Category Title) === -->
+            <h3 class="faq-section-title text-center">Academics & School Life</h3>
+            <div class="accordion" id="faqAccordionAcademics">
+
+              <!-- FAQ Item 2.1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAcademicsOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademicsOne" aria-expanded="false" aria-controls="collapseAcademicsOne">
+                    <!-- QUESTION 2.1 -->
+                    What curriculum does Honeypot Academy follow?
+                  </button>
+                </h2>
+                <div id="collapseAcademicsOne" class="accordion-collapse collapse" aria-labelledby="headingAcademicsOne" data-bs-parent="#faqAccordionAcademics">
+                  <div class="accordion-body">
+                    <!-- ANSWER 2.1 -->
+                    <strong>PERSONALIZE:</strong> We follow the Ghana Education Service (GES) curriculum, enriched with [mention any specific enrichments, e.g., Montessori principles in early years, STEM activities, specific character education programs]. Our goal is to provide a holistic and robust education.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2.2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAcademicsTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademicsTwo" aria-expanded="false" aria-controls="collapseAcademicsTwo">
+                    <!-- QUESTION 2.2 -->
+                    What are the school hours?
+                  </button>
+                </h2>
+                <div id="collapseAcademicsTwo" class="accordion-collapse collapse" aria-labelledby="headingAcademicsTwo" data-bs-parent="#faqAccordionAcademics">
+                  <div class="accordion-body">
+                    <!-- ANSWER 2.2 -->
+                    <strong>PERSONALIZE:</strong> Our regular school hours are from [Start Time, e.g., 7:30 AM] to [End Time, e.g., 3:00 PM], Monday to Friday. Specific timings for drop-off, pick-up, and after-school activities can be found [e.g., in the parent handbook or by contacting the office].
+                  </div>
+                </div>
+              </div>
+              <!-- Add more Academics/School Life FAQs here -->
+            </div>
+
+
+            <!-- === CATEGORY 3: GENERAL (Optional Category Title) === -->
+            <h3 class="faq-section-title text-center">General Information</h3>
+            <div class="accordion" id="faqAccordionGeneral">
+                <!-- FAQ Item 3.1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingGeneralOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneralOne" aria-expanded="false" aria-controls="collapseGeneralOne">
+                        <!-- QUESTION 3.1 -->
+                        How can parents get involved in the school?
+                    </button>
+                    </h2>
+                    <div id="collapseGeneralOne" class="accordion-collapse collapse" aria-labelledby="headingGeneralOne" data-bs-parent="#faqAccordionGeneral">
+                    <div class="accordion-body">
+                        <!-- ANSWER 3.1 -->
+                        <strong>PERSONALIZE:</strong> We strongly encourage parental involvement! Parents can join the Parent-Teacher Association (PTA), volunteer for school events, attend parent-teacher conferences, and support their child's learning at home. Look out for communications regarding specific opportunities.
+                    </div>
+                    </div>
+                </div>
+                <!-- Add more General FAQs here -->
+            </div>
+            <!-- === ADD MORE CATEGORIES AND FAQ ITEMS AS NEEDED === -->
+
+          </div>
+        </div>
+
+        <!-- "Still Have Questions?" Section -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h4>Still Have Questions?</h4>
+                <p>If your question isn't answered above, please feel free to reach out to us.</p>
+                <a href="contact.html" class="btn custom-btn">Contact Us</a>
+            </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- END FAQ Listing Section -->
+
+  </main>
+
+  <!-- Footer (Copy from other pages) -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <!-- PERSONALIZE THIS SHORT DESCRIPTION (Optional) -->
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <!-- END PERSONALIZE -->
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
+            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
+            <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
+            <!-- DESTINATION FILE TO CREATE: faq.html -->
+            <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
+            <!-- DESTINATION FILE TO CREATE: sitemap.html -->
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
+          <ul class="footer-contact list-unstyled">
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <!-- REPLACE # with your actual social media links -->
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END Footer -->
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    if (document.getElementById("currentYear")) {
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    }
+  </script>
+
+</body>
+</html>

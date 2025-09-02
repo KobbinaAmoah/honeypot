@@ -1,176 +1,244 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Honeypot Academy - Registration</title>
-        <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register for an account at Honeypot Academy to access our parent or student portal.">
+  <meta name="author" content="Honeypot Academy">
+  <title>Register - Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
-        <script src="js/jquery.min.js"></script>
-    </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
 
-    <body>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;">
-                    <strong><span>HoneyPot</span> Academy</strong>
-                </a>
+  <style>
+    .register-form-container {
+      max-width: 550px; /* Max width for the form, slightly wider for more fields */
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background-color: #f8f9fa; /* Light background for the form */
+      border-radius: 0.5rem;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+    .register-form-container h2 {
+      margin-bottom: 1.5rem;
+      color: var(--primary-color, #007bff);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+          <div class="d-lg-none">
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="register.html" class="bi-pencil-square custom-icon active" title="Register" aria-label="Register"></a> <!-- Active Register Icon -->
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                  <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="register.html" class="bi-pencil-square custom-icon active" title="Register" aria-label="Register"></a> <!-- Active Register Icon -->
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END Header / Navigation -->
 
-        <section class="register-form section-padding">
-            <div class="container">
+    <!-- Registration Form Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-9">
+            <div class="register-form-container">
+              <h2 class="text-center">Create an Account</h2>
+              <!-- PERSONALIZE THIS MESSAGE -->
+              <p class="text-center text-muted mb-4">Join the Honeypot Academy community. Create your account to access our portal.</p>
+              <!-- END PERSONALIZE -->
+
+              <!-- The form action="#" means it won't go anywhere on submit for now -->
+              <form action="#" method="POST">
+                <div class="mb-3">
+                  <label for="registerFullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="registerFullName" name="fullName" required placeholder="Enter your full name">
+                </div>
+
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="registerEmail" name="email" required placeholder="Enter your email address">
+                </div>
+
                 <div class="row">
-                    <!-- Left Column: Registration Form -->
-                    <div class="col-lg-6">
-                        <h2 class="text-center mb-5">Create your account</h2>
-                        <form action="submit-registration.php" method="POST" id="registrationForm">
-                            <!-- Role Selection -->
-                            <div class="mb-3">
-                                <label for="role" class="form-label">Select Role</label>
-                                <select class="form-control" id="role" name="role" required>
-                                    <option value="" disabled selected>Select your role</option>
-                                    <option value="student">Student</option>
-                                    <option value="parent">Parent</option>
-                                    <option value="facilitator">Facilitator</option>
-                                </select>
-                            </div>                            
-
-                            <!-- Common Fields (Name, Email, Phone) -->
-                            <div class="mb-3">
-                                <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstName" name="firstName" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" name="lastName" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="gender" class="form-label">Gender</label>
-                                <select class="form-control" id="gender" name="gender" required>
-                                    <option value="" disabled selected>Select your gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="dateOfBirth" class="form-label">Date of Birth</label>
-                                <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="text" class="form-control" id="phone" name="phone" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <textarea class="form-control" id="address" name="address" rows="2" required></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="confirmPassword" class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
-                            </div>
-
-                            <!-- Fields for Student -->
-                            <div id="studentFields" class="roleFields" style="display:none;">
-                                <div class="mb-3">
-                                    <label for="grade" class="form-label">Grade Level</label>
-                                    <select class="form-control" id="grade" name="grade">
-                                        <option value="" disabled selected>Select Class</option>
-                                        <option value="Nursery">Nursery</option>
-                                        <option value="Kindergarten">Kindergarten</option>
-                                        <option value="Basic 1">Basic 1</option>
-                                        <option value="Basic 2">Basic 2</option>
-                                        <option value="Basic 3">Basic 3</option>
-                                        <option value="Basic 4">Basic 4</option>
-                                        <option value="Basic 5">Basic 5</option>
-                                        <option value="Basic 6">Basic 6</option>
-                                        <option value="JHS 1">JHS 1</option>
-                                        <option value="JHS 2">JHS 2</option>
-                                        <option value="JHS 3">JHS 3</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <!-- Fields for Parent -->
-                            <div id="parentFields" class="roleFields" style="display:none;">
-                                <div class="mb-3">
-                                    <label for="parentName" class="form-label">Parent's Name</label>
-                                    <input type="text" class="form-control" id="parentName" name="parentName">
-                                </div>
-                            </div>
-
-                            <!-- Fields for Facilitator -->
-                            <div id="facilitatorFields" class="roleFields" style="display:none;">
-                                <div class="mb-3">
-                                    <label for="expertise" class="form-label">Area of Expertise</label>
-                                    <input type="text" class="form-control" id="expertise" name="expertise">
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn custom-btn w-100">Register Now</button>
-                        </form>
+                    <div class="col-md-6 mb-3">
+                        <label for="registerPassword" class="form-label">Create Password</label>
+                        <input type="password" class="form-control" id="registerPassword" name="password" required placeholder="Choose a strong password">
                     </div>
-
-                    <!-- Right Column: Image -->
-                    <div class="col-lg-6">
-                        <img src="images/ictlab/your-image.png" alt="Registration Image" class="img-fluid" style="max-height: 100%; width: 100%; object-fit: cover;">
+                    <div class="col-md-6 mb-3">
+                        <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="registerConfirmPassword" name="confirmPassword" required placeholder="Confirm your password">
                     </div>
                 </div>
+                
+                <!-- Optional: Role Selection -->
+                <!-- 
+                <div class="mb-3">
+                    <label for="registerRole" class="form-label">I am a:</label>
+                    <select class="form-select" id="registerRole" name="role">
+                        <option selected disabled value="">Select your role...</option>
+                        <option value="parent">Parent/Guardian</option>
+                        <option value="student">Student</option>
+                        <option value="staff">Staff (Prospective - Requires Approval)</option>
+                    </select>
+                </div>
+                -->
+
+                <!-- Optional: Student ID / Parent Code -->
+                <!--
+                <div class="mb-3">
+                  <label for="registerStudentId" class="form-label">Student ID (if applicable)</label>
+                  <input type="text" class="form-control" id="registerStudentId" name="studentId" placeholder="Enter student ID">
+                </div>
+                -->
+
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="agreeTerms" name="agreeTerms" required>
+                  <label class="form-check-label" for="agreeTerms">I agree to the <a href="terms-of-use.html" target="_blank">Terms of Use</a> and <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.</label>
+                  <!-- DESTINATION FILES TO CREATE: terms-of-use.html, privacy-policy.html -->
+                </div>
+
+                <button type="submit" class="btn custom-btn w-100">Register</button>
+              </form>
+              <hr class="my-4">
+              <p class="text-center">Already have an account? <a href="login.html" class="text-decoration-none">Login here</a></p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Registration Form Section -->
 
-        <footer class="pt-5 pb-5 text-center">
-            <div class="container">
-                <p>&copy; 2025 Honeypot Academy. All rights reserved.</p>
-            </div>
-        </footer>
+  </main>
 
-        <!-- JavaScript -->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/Headroom.js"></script>
-        <script src="js/jQuery.headroom.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/custom.js"></script>
+  <!-- Footer (Copy from other pages) -->
+ <footer class="site-footer">
+    <div class="container">
+      <div class="row">
 
-        <script>
-            // JavaScript to handle role-based form display
-            document.getElementById("role").addEventListener("change", function() {
-                var role = this.value;
-                var roleFields = document.querySelectorAll(".roleFields");
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <!-- PERSONALIZE THIS SHORT DESCRIPTION (Optional) -->
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <!-- END PERSONALIZE -->
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
+        </div>
 
-                // Hide all role-based fields first
-                roleFields.forEach(function(field) {
-                    field.style.display = "none";
-                });
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
+            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
+            <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
+            <!-- DESTINATION FILE TO CREATE: faq.html -->
+            <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
+            <!-- DESTINATION FILE TO CREATE: sitemap.html -->
+          </ul>
+        </div>
 
-                // Show fields based on selected role
-                if (role === "student") {
-                    document.getElementById("studentFields").style.display = "block";
-                } else if (role === "parent") {
-                    document.getElementById("parentFields").style.display = "block";
-                } else if (role === "facilitator") {
-                    document.getElementById("facilitatorFields").style.display = "block";
-                }
-            });
-        </script>
-    </body>
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
+          <ul class="footer-contact list-unstyled">
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <!-- REPLACE # with your actual social media links -->
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END Footer -->
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    if (document.getElementById("currentYear")) {
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    }
+  </script>
+
+</body>
 </html>

@@ -23,9 +23,6 @@
       padding-bottom: 2rem;
       /* border-bottom: 1px solid #eee; */ /* Optional separator */
     }
-    .program-section:last-of-type {
-        /* border-bottom: none; */
-    }
     .program-section h3 {
         color: var(--primary-color, #007bff); /* Or your theme's heading color */
         margin-bottom: 1rem;
@@ -91,10 +88,10 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a> <!-- Academics Dropdown Active -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a> <!-- Academics Dropdown Active -->
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
                   <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
-                  <li><a class="dropdown-item active" href="programs.html">Special Programs</a></li> <!-- This page active -->
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li> <!-- This page active -->
                   <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
                 </ul>
               </li>
@@ -113,16 +110,16 @@
     </header>
     <!-- END Header / Navigation -->
 
-    <!-- Page Title / Simple Hero Section -->
+    <!-- Page Title / Simple Hero Section 
     <section class="page-hero-section" style="background-image: url('YOUR_PROGRAMS_PAGE_BANNER_IMAGE.jpg');">
-      <!-- IMAGE: A wide banner image, collage of students in various extracurricular activities, or a vibrant, active school scene. -->
+      <!-- IMAGE: A wide banner image, collage of students in various extracurricular activities, or a vibrant, active school scene. 
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h1 class="page-title">Our Special Programs & Activities</h1>
-            <!-- PERSONALIZE THIS LEAD TEXT -->
+            <!-- PERSONALIZE THIS LEAD TEXT 
             <p class="lead">Enriching Minds, Inspiring Growth Beyond the Classroom.</p>
-            <!-- END PERSONALIZE -->
+            <!-- END PERSONALIZE 
           </div>
         </div>
       </div>
@@ -152,7 +149,7 @@
             <div class="program-section row align-items-center py-4 my-3 bg-light rounded"> <!-- Added py-4 my-3 bg-light rounded for styling -->
                 <div class="col-lg-4 col-md-5 text-center mb-3 mb-md-0">
                     <!-- IMAGE or ICON for STEM -->
-                    <img src="YOUR_STEM_PROGRAM_IMAGE.jpg" class="program-image shadow-sm" alt="STEM and Robotics Program">
+                    <img src="images/ictlab/math.jpg" class="program-image shadow-sm" alt="STEM and Robotics Program">
                     <!-- OR <i class="bi bi-robot program-icon"></i> -->
                 </div>
                 <div class="col-lg-8 col-md-7">
@@ -175,7 +172,7 @@
                 </div>
                 <div class="col-lg-4 col-md-5 order-md-2 text-center mb-3 mb-md-0">
                     <!-- IMAGE or ICON for Arts -->
-                    <img src="YOUR_ARTS_PROGRAM_IMAGE.jpg" class="program-image shadow-sm" alt="Creative Arts Program">
+                    <img src="images/ictlab/election1.jpg" class="program-image shadow-sm" alt="Creative Arts Program">
                     <!-- OR <i class="bi bi-palette program-icon"></i> -->
                 </div>
             </div>
@@ -184,7 +181,7 @@
             <div class="program-section row align-items-center py-4 my-3 bg-light rounded">
                 <div class="col-lg-4 col-md-5 text-center mb-3 mb-md-0">
                     <!-- IMAGE or ICON for Sports -->
-                    <img src="YOUR_SPORTS_PROGRAM_IMAGE.jpg" class="program-image shadow-sm" alt="Sports and Athletics">
+                    <img src="images/ictlab/sportsday.jpg" class="program-image shadow-sm" alt="Sports and Athletics">
                     <!-- OR <i class="bi bi-trophy program-icon"></i> -->
                 </div>
                 <div class="col-lg-8 col-md-7">
@@ -207,7 +204,7 @@
                 </div>
                 <div class="col-lg-4 col-md-5 order-md-2 text-center mb-3 mb-md-0">
                     <!-- IMAGE or ICON for ICT -->
-                    <img src="images/ictlab/ictlab.jpg" class="program-image shadow-sm" alt="ICT and Digital Literacy Program">
+                    <img src="images/ictlab/teach5.JPG" class="program-image shadow-sm" alt="ICT and Digital Literacy Program">
                     <!-- OR <i class="bi bi-laptop program-icon"></i> -->
                 </div>
             </div>
@@ -235,7 +232,57 @@
 
   <!-- Footer (Copy from other pages) -->
   <footer class="site-footer">
-    <!-- ... (Paste the entire footer section from index.html here) ... -->
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Honeypot Academy</h5>
+          <!-- PERSONALIZE THIS SHORT DESCRIPTION (Optional) -->
+          <p class="text-muted small">Providing a nurturing foundation for young minds in Adenta, Accra. The right start for a bright future.</p>
+          <!-- END PERSONALIZE -->
+          <p class="copyright-text text-muted mt-4">© <span id="currentYear"></span> Honeypot Academy. All Rights Reserved.</p>
+          <p class="text-muted small">Designed by <a href="https://sites.google.com/view/violestudios" target="_blank" rel="noopener noreferrer" class="text-muted">violestudios</a></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3 site-footer-title">Quick Links</h5>
+          <ul class="footer-menu list-unstyled">
+            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+            <li class="footer-menu-item"><a href="admissions.html" class="footer-menu-link">Admissions</a></li>
+            <li class="footer-menu-item"><a href="academics.html" class="footer-menu-link">Academics</a></li>
+            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">News & Events</a></li>
+            <li class="footer-menu-item"><a href="gallery.html" class="footer-menu-link">Gallery</a></li>
+            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact Us</a></li>
+            <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
+            <!-- DESTINATION FILE TO CREATE: faq.html -->
+            <li class="footer-menu-item"><a href="sitemap.html" class="footer-menu-link">Sitemap</a></li>
+            <!-- DESTINATION FILE TO CREATE: sitemap.html -->
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-sm-0">
+          <h5 class="text-white mb-3 site-footer-title">Contact Info</h5>
+          <ul class="footer-contact list-unstyled">
+            <li class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Adenta, Accra, Ghana</li>
+            <li><a href="tel:+233553058243" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 55 305 8243</a></li>
+            <li><a href="tel:+233500071744" class="footer-menu-link"><i class="bi bi-telephone-fill me-2"></i>+233 50 007 1744</a></li>
+            <li><a href="mailto:info@honeypotacademy.edu.gh" class="footer-menu-link"><i class="bi bi-envelope-fill me-2"></i>info@honeypotacademy.edu.gh</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="text-white mb-3 site-footer-title">Follow Us</h5>
+          <ul class="social-icon list-unstyled d-flex">
+            <!-- REPLACE # with your actual social media links -->
+            <li class="me-3"><a href="YOUR_YOUTUBE_LINK_HERE" class="social-icon-link bi-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a></li>
+            <li class="me-3"><a href="YOUR_WHATSAPP_LINK_HERE" class="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"></a></li>
+            <li class="me-3"><a href="YOUR_INSTAGRAM_LINK_HERE" class="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+            <li><a href="YOUR_FACEBOOK_LINK_HERE" class="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
   </footer>
   <!-- END Footer -->
 

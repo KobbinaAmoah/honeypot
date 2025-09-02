@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitemap for the Honeypot Academy website. Find all pages and sections at a glance.">
+  <meta name="author" content="Honeypot Academy">
+  <title>Sitemap - Honeypot Academy</title>
+  <link rel="icon" type="image/png" href="images/ictlab/honeypotlogo1.png"> <!-- Confirm this path -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+  <link href="css/custom-honeypot.css" rel="stylesheet"> <!-- Your custom styles -->
+
+  <!-- Remember to add .page-hero-section CSS from about.html to custom-honeypot.css if not already there -->
+  <style>
+    .sitemap-section {
+      margin-bottom: 2rem;
+    }
+    .sitemap-section h3 {
+      /* color: var(--primary-color, #007bff); */ /* Or your theme's heading color */
+      margin-bottom: 1rem;
+      font-size: 1.5rem; /* Slightly smaller than page sub-titles */
+    }
+    .sitemap-list {
+      list-style-type: none; /* Remove default bullets */
+      padding-left: 0;
+    }
+    .sitemap-list .sitemap-list { /* Nested lists */
+      padding-left: 1.5rem; /* Indent sub-pages */
+      margin-top: 0.5rem;
+    }
+    .sitemap-list li a {
+      text-decoration: none;
+      color: var(--dark-color, #343a40);
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .sitemap-list li a:hover {
+      color: var(--primary-color, #007bff);
+      text-decoration: underline;
+    }
+    .sitemap-list > li > a { /* Top level items */
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+          <div class="d-lg-none">
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <!-- ... (other nav items) ... -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+              <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END Header / Navigation -->
+
+    <!-- Page Title / Simple Hero Section -->
+    <section class="page-hero-section" style="background-image: url('YOUR_SITEMAP_PAGE_BANNER_IMAGE.jpg');">
+      <!-- IMAGE: Optional. A simple abstract background, a tree structure, or a campus overview. -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="page-title">Sitemap</h1>
+            <!-- PERSONALIZE THIS LEAD TEXT -->
+            <p class="lead">An overview of all pages on the Honeypot Academy website.</p>
+            <!-- END PERSONALIZE -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page Title Section -->
+
+    <!-- Sitemap Listing Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- PERSONALIZE THIS INTRODUCTION (Optional) -->
+            <p class="text-center mb-4">Use this sitemap to quickly navigate to any page on our website.</p>
+            <!-- END PERSONALIZE -->
+
+            <div class="row">
+                <!-- Column 1 for sitemap -->
+                <div class="col-md-6">
+                    <div class="sitemap-section">
+                        <ul class="sitemap-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                                <ul class="sitemap-list">
+                                    <li><a href="about-history.html">Our History</a></li>
+                                    <li><a href="about-mission.html">Mission, Vision & Values</a></li>
+                                    <li><a href="team.html">Our Team</a>
+                                        <!-- You could list key team members here if desired, linking to their detail pages -->
+                                        <!-- Example: <li><a href="mrs-belinda-detail.html">Mrs. Belinda (Head Mistress)</a></li> -->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="admissions.html">Admissions</a> <!-- Link to main admissions page -->
+                                <ul class="sitemap-list">
+                                    <li><a href="admissions-requirements.html">Admission Requirements</a></li>
+                                    <li><a href="apply.html">How to Apply</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="academics.html">Academics</a>
+                                <ul class="sitemap-list">
+                                    <li><a href="programs.html">Special Programs</a></li>
+                                    <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2 for sitemap -->
+                <div class="col-md-6">
+                    <div class="sitemap-section">
+                        <ul class="sitemap-list">
+                            <li>
+                                <a href="news.html">News & Announcements</a>
+                                <!-- If you have many static news articles, you could list them here. -->
+                                <!-- Otherwise, just linking to the main news page is fine. -->
+                                <!-- Example:
+                                <ul class="sitemap-list">
+                                    <li><a href="news-science-fair.html">Science Fair Highlights</a></li>
+                                    <li><a href="news-au-day.html">AU Day Celebration</a></li>
+                                </ul>
+                                -->
+                            </li>
+                            <li><a href="events.html">Events & Term Itinerary</a></li>
+                            <li><a href="gallery.html">Photo Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+                            <li>
+                                <a href="#">Account</a> <!-- Non-clickable heading for login/register -->
+                                <ul class="sitemap-list">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Legal</a> <!-- Non-clickable heading for legal pages -->
+                                <ul class="sitemap-list">
+                                    <li><a href="terms-of-use.html">Terms of Use</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sitemap.html">Sitemap</a> (This page)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- End row for columns -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Sitemap Listing Section -->
+
+  </main>
+
+  <!-- Footer (Copy from other pages) -->
+  <footer class="site-footer">
+    <!-- ... (Paste the entire footer section from index.html here) ... -->
+  </footer>
+  <!-- END Footer -->
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    if (document.getElementById("currentYear")) {
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    }
+  </script>
+
+</body>
+</html>

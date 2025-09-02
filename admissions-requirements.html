@@ -91,64 +91,67 @@
     </section>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <header>
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-              <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy" width="50" height="50">
-              <strong>Honeypot Academy</strong>
-            </a>
-            <div class="d-lg-none">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">
+            <!-- IMAGE: Your school logo. Ideally around 150-200px wide, 40-60px high for a navbar -->
+            <img src="images/ictlab/logo.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <strong>Honeypot Academy</strong>
+          </a>
+
+          <div class="d-lg-none"> <!-- Icons for mobile view -->
+            <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
+            <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <li><a class="dropdown-item" href="about.html">About Honeypot</a></li>
+                  <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                  <!-- You can add more specific about pages here e.g., Mission/Vision if they are separate pages -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                  <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
+                  <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
+                  <li><a class="dropdown-item" href="apply.html">How to Apply</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                  <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
+                  <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-none d-lg-block"> <!-- Icons for desktop view -->
               <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-              <a href="facilitator-detail.html" class="bi-pencil-square custom-icon" title="Our Team" aria-label="Our Team"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                    <li><a class="dropdown-item" href="about.html">About Honeypot Academy</a></li>
-                    <li><a class="dropdown-item" href="about-history.html">History of Honeypot Academy</a></li>
-                    <li><a class="dropdown-item" href="about-mission.html">Mission of Honeypot Academy</a></li>
-                    <li><a class="dropdown-item" href="facilitator-detail.html">Our Team</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
-                    <li><a class="dropdown-item" href="admissions-requirements.html">Requirements</a></li>
-                    <li><a class="dropdown-item" href="admissions-apply.html">Apply</a></li>
-                    <li><a class="dropdown-item" href="admissions.html">Admissions Info</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                    <li><a class="dropdown-item" href="academics.html">Academics</a></li>
-                    <li><a class="dropdown-item" href="academics.html">Programs</a></li>
-                    <li><a class="dropdown-item" href="academics-calendar.html">Academic Calendar</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvents">
-                    <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
-                    <li><a class="dropdown-item" href="events-past.html">Past Events</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="facilitator-detail.html">Facilitators</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-              </ul>
-              <div class="d-none d-lg-block">
-                <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-                <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
-              </div>
+              <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
             </div>
           </div>
-    </nav>
+        </div>
+      </nav>
+    </header>
 
     <!-- Page Header -->
     <header class="site-header section-padding d-flex justify-content-center align-items-center">
@@ -307,7 +310,7 @@
                             <div class="p-3">
                                 <i class="bi bi-envelope-fill text-primary mb-3" style="font-size: 2rem;"></i>
                                 <h5>Email Us</h5>
-                                <p><a href="mailto:admissions@honeypotacademy.edu.gh">admissions@honeypotacademy.edu.gh</a></p>
+                                <p><a href="mailto:admissions@honeypotacademy.edu.gh">honeypotacademy@gmail.com</a></p>
                             </div>
                         </div>
                         

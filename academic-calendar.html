@@ -62,17 +62,21 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <a class="navbar-brand" href="index.html">
-            <img src="images/ictlab/honeypotlogo1.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
+            <!-- IMAGE: Your school logo. Ideally around 150-200px wide, 40-60px high for a navbar -->
+            <img src="images/ictlab/logo.png" alt="Honeypot Academy Logo" style="max-height: 50px; width: auto;" loading="lazy">
             <strong>Honeypot Academy</strong>
           </a>
-          <div class="d-lg-none">
+
+          <div class="d-lg-none"> <!-- Icons for mobile view -->
             <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
-            <a href="academics.html" class="bi-book custom-icon active" title="Academics" aria-label="Academics"></a>
+            <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
           </div>
+
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
@@ -80,6 +84,7 @@
                   <li><a class="dropdown-item" href="about-history.html">Our History</a></li>
                   <li><a class="dropdown-item" href="about-mission.html">Mission & Vision</a></li>
                   <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                  <!-- You can add more specific about pages here e.g., Mission/Vision if they are separate pages -->
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -91,11 +96,11 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a> <!-- Academics Dropdown Active -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
                   <li><a class="dropdown-item" href="academics.html">Our Curriculum</a></li>
                   <li><a class="dropdown-item" href="programs.html">Special Programs</a></li>
-                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li> <!-- This page active -->
+                  <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
@@ -103,7 +108,8 @@
               <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-            <div class="d-none d-lg-block">
+
+            <div class="d-none d-lg-block"> <!-- Icons for desktop view -->
               <a href="login.html" class="bi-person custom-icon me-3" title="Login" aria-label="Login"></a>
               <a href="register.html" class="bi-pencil-square custom-icon" title="Register" aria-label="Register"></a>
             </div>
@@ -136,6 +142,11 @@
         <!-- Introduction (Optional) -->
         <div class="row mb-5">
             <div class="col-lg-10 mx-auto text-center">
+              <div class="col-12">
+                <h1 class="page-title">Academic Calendar 2024/2025</h1>
+                <!-- PERSONALIZE THIS LEAD TEXT -->
+                 <p class="lead">Key dates and events for the current academic year at Honeypot Academy.</p>
+                 <!-- END PERSONALIZE -->
                 <!-- PERSONALIZE THIS INTRODUCTION -->
                 <p class="lead">Please find below the important dates for the 2024/2025 academic session. For a detailed weekly breakdown of the current term's activities, please see our <a href="events.html">Events Page</a>.</p>
                 <!-- END PERSONALIZE -->
@@ -169,7 +180,7 @@
         <!-- END Third Term Section -->
 
 
-        <!-- Placeholder for First Term Section -->
+        <!-- Placeholder for First Term Section 
         <div class="calendar-section">
           <div class="row">
             <div class="col-12 text-center">
@@ -178,7 +189,7 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-lg-10">
-                <!-- PERSONALIZE WITH ACTUAL DATES WHEN AVAILABLE -->
+                <!-- PERSONALIZE WITH ACTUAL DATES WHEN AVAILABLE 
                 <ul class="list-unstyled key-dates-list">
                     <li><span class="date">September 9, 2025:</span> Reopening for Next Academic Year / Term Begins</li>
                     <li><span class="date">[Date]:</span> Mid-Term Break (if applicable)</li>
@@ -186,7 +197,7 @@
                     <li><span class="date">[Date]:</span> Vacation Day (End of Term)</li>
                 </ul>
                 <p class="text-muted text-center mt-2"><em>Detailed schedule for the First Term will be updated soon.</em></p>
-                <!-- END PERSONALIZE -->
+                <!-- END PERSONALIZE 
             </div>
           </div>
         </div>
